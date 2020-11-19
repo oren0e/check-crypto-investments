@@ -140,3 +140,6 @@ logs/
 # my experiments
 trying/
 trying/**
+
+# investments
+lists/initial_investments
