@@ -6,6 +6,9 @@ from threading import Semaphore, Timer
 
 
 def ratelimit(limit: int, every: int) -> Callable:
+    """
+    Limit the calls to the API to avoid being blocked
+    """
     def limit_decorator(f: Callable) -> Callable:
         semaphore = Semaphore(limit)
         @wraps(f)
