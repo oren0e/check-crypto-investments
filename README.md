@@ -10,7 +10,7 @@ with an alert via Telegram.
 should contain the id of the coin you are interested to monitor followed by a single space
 followed by the initial price you bought this coin for (price per 1 coin).  
 If you're not sure about the `id` of your coin you can use the provided `CoinSearch` class to search
-for ids or any text you want in the list of all available coins (including ids and symbols as well).  
+for ids or any text you want in the list of all available coins (including names and symbols as well).  
 For example, to search for the id of SNX:  
 ```python
 from backend.data_tools import CoinSearch
