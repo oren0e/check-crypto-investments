@@ -70,7 +70,6 @@ class DataHandler:
             result_dict[key] = ((self.prices[key] - value) / value) * 100
             msg = f'Return for {key}: {round(result_dict[key], 3)}%'
             telegram_send(msg)
-            #print(f'Return for {key}: {round(result_dict[key], 3)}%')
         logger.info(f'**************** Calculated Returns *********************\n'
                     f'{result_dict}')
 
