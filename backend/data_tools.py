@@ -8,6 +8,8 @@ from config.common import COIN_LIST_FILEPATH, initial_dict
 
 from utils.logger import logger
 
+from utils.telegram import telegram_send
+
 
 class CoinSearch:
     def __init__(self) -> None:
@@ -43,8 +45,8 @@ class CoinSearch:
 
 class DataHandler:
 
-    def __init__(self, coin_ids: List[str], vs_currency: str = 'usd') -> None:
-        self.coin_ids = coin_ids
+    def __init__(self, vs_currency: str = 'usd') -> None:
+        self.coin_ids = list(initial_dict.keys())
         self.vs_currency = vs_currency
         self.cg = CoinGeckoAPI()
         self.prices: Optional[Dict[str, float]] = None
@@ -66,6 +68,9 @@ class DataHandler:
         result_dict: Dict[str, float] = {}
         for key, value in initial_dict.items():
             result_dict[key] = ((self.prices[key] - value) / value) * 100
-            print(f'Return for {key}: {round(result_dict[key], 3)}%')
+            msg = f'Return for {key}: {round(result_dict[key], 3)}%'
+            telegram_send(msg)
+            #print(f'Return for {key}: {round(result_dict[key], 3)}%')
         logger.info(f'**************** Calculated Returns *********************\n'
                     f'{result_dict}')
+
