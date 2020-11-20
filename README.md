@@ -28,6 +28,7 @@ cs.search_for_coin('snx')
 
 ## Usage
 The main purpose of this tool is for scheduling a cron-job on an always available instance (i.e., server).
+The usage is simple: `python cci.py`.
 
 ## TODO
 1. Make a library for easy installation
