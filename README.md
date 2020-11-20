@@ -4,6 +4,7 @@ This Python script allows you to monitor the returns on your coin investments
 with an alert via Telegram.
 
 ## Installation
+**Note**: Currently this tool is only available for Mac or Linux users.
 1. Clone this repo.
 2. `pip install pycoingecko`
 3. Create a text file called `initial_investments` inside the `lists/` folder. Each line in this file
@@ -31,4 +32,5 @@ The main purpose of this tool is for scheduling a cron-job on an always availabl
 ## TODO
 1. Make a library for easy installation
 2. Add an option for a threshold only above which alerts will be sent to Telegram
-3. Write more tests 
+3. Write more tests
+4. Make available for Windows users as well
