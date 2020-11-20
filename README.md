@@ -21,7 +21,7 @@ cs.search_for_coin('snx')
 4. For using telegram:
     - Check out [this link](https://core.telegram.org/bots#6-botfather) and get a token.
     - Get the `chat_id` by writing something in the chat of your new bot and then 
-    visit https://api.telegram.org/bot<YourBOTToken>/getUpdates and get the `chat_id` under the key
+    visit `https://api.telegram.org/bot<YourBOTToken>/getUpdates` and get the `chat_id` under the key
     `mesasge['chat']['id']`
     - The last step is to add 2 environment variables: TELEGRAM_API_TOKEN and TELEGRAM_CHAT_ID with the
     acquired API token and `chat_id`, respectively.
