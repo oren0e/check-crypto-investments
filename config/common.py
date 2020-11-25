@@ -2,6 +2,8 @@ import os
 
 from typing import Dict
 
+from utils.logger import logger
+
 ROOT_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
 LOG_DIR = os.path.join(ROOT_DIR, 'logs')
 COIN_LIST_DIR = os.path.join(ROOT_DIR, 'lists')
@@ -19,4 +21,5 @@ if os.path.exists(INITIAL_INV):
     with open(INITIAL_INV, 'r') as f:
         initial_dict: Dict[str, int] = {line.strip().split()[0]: float(line.strip().split()[1]) for line in f}
 else:
-    raise RuntimeError("Define initial investments file in lists. See readme in repo for more info.")
+    initial_dict: Dict[str, int] = {'bitcoin': 500, 'ethereum': 300}
+    logger.warning("!!! Warning: initial_investments file was not found, using defaults instead.")
