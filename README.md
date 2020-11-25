@@ -1,3 +1,4 @@
+![example workflow name](https://github.com/oren0e/check-crypto-investments/workflows/CI/badge.svg)
 # Get Alerts for Your Crypto Investments
 ## Overview
 This Python script allows you to monitor the returns on your coin investments
