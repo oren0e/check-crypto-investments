@@ -10,14 +10,18 @@ with an alert via Telegram.
 3. Create a text file called `initial_investments` inside the `lists/` folder. Each line in this file
 should contain the id of the coin you are interested to monitor followed by a single space
 followed by the initial price you bought this coin for (price per 1 coin).  
-If you're not sure about the `id` of your coin you can use the provided `CoinSearch` class to search
+_Note_: If you won't create this file default values will be used (for robustness sake only, the whole
+purpose of this tool is to let you monitor your own investments). Specifically the tool will assume you bought
+bitcoin at a price of 500 per unit and Ethereum for a price of 300 per unit.     
+
+    - If you're not sure about the `id` of your coin you can use the provided `CoinSearch` class to search
 for ids or any text you want in the list of all available coins (including names and symbols as well).  
 For example, to search for the id of SNX:  
-```python
-from backend.data_tools import CoinSearch
-cs = CoinSearch()
-cs.search_for_coin('snx')
-```
+        ```python
+        from backend.data_tools import CoinSearch
+        cs = CoinSearch()
+        cs.search_for_coin('snx')
+        ```
 4. For using telegram:
     - Check out [this link](https://core.telegram.org/bots#6-botfather) and get a token.
     - Get the `chat_id` by writing something in the chat of your new bot and then 
