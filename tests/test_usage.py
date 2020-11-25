@@ -15,6 +15,10 @@ def dh() -> DataHandler:
     return DataHandler()
 
 
-@mock.patch("backend.data_tools.DataHandler._get_prices")
-def test_calculate_returns(mock_initial_dict: mock.Mock, dh) -> None:
-    mock_initial_dict.return_value = {'coin_A': 100, 'coin_B': 400, 'coin_C': 10.12}
+@mock.patch.dict('backend.data_tools.initial_dict', {'coin_A': 10, 'coin_B': 20})
+@mock.patch("backend.data_tools.DataHandler.cg.get_price")
+def test_calculate_returns(mock_new_prices, initial_dict, dh) -> None:
+    mock_new_prices.return_value = {'coin_A': {'usd': 50}, 'coin_B': {'usd': 200}}
+    with mock.patch('backend.data_tools.telegram_send') as tele_mock:
+        dh.calculate_returns()
+        tele_mock.assert_has_calls([mock.call('Return for coin_A: 400.0%'), mock.call('Return for coin_A: 900.0%')])
