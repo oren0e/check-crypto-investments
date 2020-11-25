@@ -4,7 +4,9 @@ from typing import List, Dict, Optional
 
 import os
 
-from config.common import COIN_LIST_FILEPATH, initial_dict
+from config.common import COIN_LIST_FILEPATH
+
+from config.initial import initial_dict
 
 from utils.logger import logger
 

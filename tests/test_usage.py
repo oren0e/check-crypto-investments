@@ -1,4 +1,4 @@
-from backend.data_tools import DataHandler, CoinSearch, initial_dict
+from backend.data_tools import DataHandler, CoinSearch, CoinGeckoAPI
 
 from unittest import mock
 
@@ -28,3 +28,10 @@ def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, dh) ->
     initial_dict_mock.items.side_effect = d.items
     dh.calculate_returns()
     tele_mock.assert_has_calls([mock.call('Return for coin_A: 400.0%'), mock.call('Return for coin_B: 900.0%')])
+
+
+@pytest.mark.integration
+def test_api_response() -> None:
+    cg = CoinGeckoAPI()
+    ans = cg.ping()
+    assert ans, "CoinGeckoAPI did not return a response!"
