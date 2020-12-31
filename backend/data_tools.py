@@ -66,10 +66,10 @@ class DataHandler:
         logger.info(f'Got prices {self.prices}')
 
     @staticmethod
-    def _get_initial_from_s3() -> Dict[str, int]:
+    def _get_initial_from_s3() -> Dict[str, float]:
         s3_resource = s3_settings.session.resource('s3')
         body = s3_resource.Object(s3_settings.S3_BUCKET, "initial_investments").get()['Body'].read().decode('utf-8')
-        initial_dict_s3: Dict[str, int] = {line.strip().split()[0]: float(line.strip().split()[1]) for line in body.split('\n')}
+        initial_dict_s3: Dict[str, float] = {line.strip().split()[0]: float(line.strip().split()[1]) for line in body.split('\n')}
         return initial_dict_s3
 
     def _calculate_returns(self, d: Dict[str, float]) -> str:
