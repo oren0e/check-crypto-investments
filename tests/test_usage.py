@@ -1,4 +1,5 @@
 from backend.data_tools import DataHandler, CoinSearch, CoinGeckoAPI
+from utils import s3_settings
 
 from unittest import mock
 
@@ -35,3 +36,10 @@ def test_api_response() -> None:
     cg = CoinGeckoAPI()
     ans = cg.ping()
     assert ans, "CoinGeckoAPI did not return a response!"
+
+
+def test_s3() -> None:
+    s3_resource = s3_settings.session.resource('s3')
+    body = s3_resource.Object(s3_settings.S3_BUCKET, "initial_investments").get()['Body'].read().decode('utf-8')
+    assert body
+    assert len(body) > 0
