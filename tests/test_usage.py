@@ -26,8 +26,8 @@ def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, dh) ->
     initial_dict_mock.__getitem__.side_effect = d.__getitem__
     initial_dict_mock.__iter__.side_effect = d.__iter__
     initial_dict_mock.items.side_effect = d.items
-    dh.calculate_returns()
-    tele_mock.assert_has_calls([mock.call('Return for coin_A: 400.0%'), mock.call('Return for coin_B: 900.0%')])
+    dh.send_msg()
+    tele_mock.assert_called_with('Return for coin_A: 400.0%\nReturn for coin_B: 900.0%\n')
 
 
 @pytest.mark.integration
