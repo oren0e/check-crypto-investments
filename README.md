@@ -33,7 +33,11 @@ For example, to search for the id of SNX:
 
 ## Usage
 The main purpose of this tool is for scheduling a cron-job on an always available instance (i.e., server).
-The usage is simple: `python cci.py`.
+The usage is simple: `python cci.py`.  
+### Usage - S3
+If the command is issued with `python cci.py -r` the initial investments list will be taken from S3 bucket
+which, in case you're interested to use it, you would have to create on your own. I created this option
+mainly so I'll be able to receive updates automatically by scheduling a run through github workflows.
 
 ## TODO
 1. Make a library for easy installation
