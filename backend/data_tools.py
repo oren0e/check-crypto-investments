@@ -5,12 +5,11 @@ from typing import List, Dict, Optional
 import os
 
 from config.common import COIN_LIST_FILEPATH
-
 from config.initial import initial_dict
 
 from utils.logger import logger
-
 from utils.telegram import telegram_send
+from utils import s3_settings
 
 
 class CoinSearch:
@@ -47,14 +46,15 @@ class CoinSearch:
 
 class DataHandler:
 
-    def __init__(self, vs_currency: str = 'usd') -> None:
+    def __init__(self, vs_currency: str = 'usd', remote_initial: bool = False) -> None:
         self.coin_ids = list(initial_dict.keys())
         self.vs_currency = vs_currency
         self.cg = CoinGeckoAPI()
         self.prices: Optional[Dict[str, float]] = None
+        self.remote_initial = remote_initial
         logger.info(f'--------------------- Class {self.__class__.__name__}'
                     f' initiated with parameters: coin_ids={self.coin_ids},'
-                    f'vs_currency={self.vs_currency}')
+                    f'vs_currency={self.vs_currency}, remote_initial={self.remote_initial}')
 
     def _get_prices(self) -> None:
         """
@@ -65,13 +65,29 @@ class DataHandler:
         self.prices: Dict[str, float] = {key: value[self.vs_currency] for key, value in raw_prices.items()}
         logger.info(f'Got prices {self.prices}')
 
-    def calculate_returns(self) -> None:
-        self._get_prices()
+    @staticmethod
+    def _get_initial_from_s3() -> Dict[str, int]:
+        s3_resource = s3_settings.session.resource('s3')
+        body = s3_resource.Object(s3_settings.S3_BUCKET, "initial_investments").get()['Body'].read().decode('utf-8')
+        initial_dict_s3: Dict[str, int] = {line.strip().split()[0]: float(line.strip().split()[1]) for line in body.split('\n')}
+        return initial_dict_s3
+
+    def _calculate_returns(self, d: Dict[str, float]) -> str:
         result_dict: Dict[str, float] = {}
-        for key, value in initial_dict.items():
+        msg: str = ""
+        for key, value in d.items():
             result_dict[key] = ((self.prices[key] - value) / value) * 100
-            msg = f'Return for {key}: {round(result_dict[key], 3)}%'
-            telegram_send(msg)
+            msg += f'Return for {key}: {round(result_dict[key], 3)}%\n'
         logger.info(f'**************** Calculated Returns *********************\n'
                     f'{result_dict}')
+        return msg
 
+    def send_msg(self) -> None:
+        self._get_prices()
+        if self.remote_initial:
+            initial_dict_s3 = self._get_initial_from_s3()
+            msg = self._calculate_returns(initial_dict_s3)
+        else:
+            msg = self._calculate_returns(initial_dict)
+        telegram_send(msg)
+        logger.info(f"Message:\n {msg}\n was sent!")
