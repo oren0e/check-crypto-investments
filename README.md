@@ -44,3 +44,5 @@ mainly so I'll be able to receive updates automatically by scheduling a run thro
 2. Add an option for a threshold only above which alerts will be sent to Telegram
 3. Write more tests
 4. Make available for Windows users as well
+5. Add more linters to the CI
+6. Use poetry for requirements
