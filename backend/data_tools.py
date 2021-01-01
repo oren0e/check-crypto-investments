@@ -50,7 +50,7 @@ class DataHandler:
         self.coin_ids = list(initial_dict.keys())
         self.vs_currency = vs_currency
         self.cg = CoinGeckoAPI()
-        self.prices: Optional[Dict[str, float]] = None
+        self.prices: Dict[str, float]
         self.remote_initial = remote_initial
         logger.info(f'--------------------- Class {self.__class__.__name__}'
                     f' initiated with parameters: coin_ids={self.coin_ids},'
