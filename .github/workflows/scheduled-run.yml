@@ -3,7 +3,7 @@ name: scheduled-run
 on:
   schedule:
     # UTC time
-    - cron: "45 14 1,15,30 * *"
+    - cron: '0 17 * * *'
 
 jobs:
   build:
