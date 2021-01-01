@@ -4,7 +4,7 @@ name: scheduled-run
 on:
   schedule:
     # UTC time
-    - cron: "25 23 * * *"
+    - cron: "25 00 * * *"
 
 jobs:
   build:
@@ -22,10 +22,10 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Execute python script
-      run: |
-        python cci.py -r
       env:
         TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         AWS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
         AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+      run: |
+        python cci.py -r
