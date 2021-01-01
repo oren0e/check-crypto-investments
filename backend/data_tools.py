@@ -75,8 +75,6 @@ class DataHandler:
     def _calculate_returns(self, d: Dict[str, float]) -> str:
         result_dict: Dict[str, float] = {}
         msg: str = ""
-        print("result_dict:", result_dict)
-        print("d dict:", d)
         for key, value in d.items():
             result_dict[key] = ((self.prices[key] - value) / value) * 100
             msg += f'Return for {key}: {round(result_dict[key], 3)}%\n'
