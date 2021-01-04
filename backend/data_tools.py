@@ -63,6 +63,8 @@ class DataHandler:
         """
         raw_prices: Dict[str, Dict[str, float]] = self.cg.get_price(ids=self.coin_ids, vs_currencies=self.vs_currency)
         self.prices: Dict[str, float] = {key: value[self.vs_currency] for key, value in raw_prices.items()}
+        print(raw_prices)
+        print(self.prices)
         logger.info(f'Got prices {self.prices}')
 
     @staticmethod
