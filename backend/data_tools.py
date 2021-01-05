@@ -47,37 +47,39 @@ class CoinSearch:
 class DataHandler:
 
     def __init__(self, vs_currency: str = 'usd', remote_initial: bool = False) -> None:
-        self.coin_ids = list(initial_dict.keys())
+        self.coin_ids: Optional[List[str]] = None
         self.vs_currency = vs_currency
         self.cg = CoinGeckoAPI()
         self.prices: Dict[str, float]
         self.remote_initial = remote_initial
+        self.the_initial_dict: Optional[Dict[str, float]] = None
         logger.info(f'--------------------- Class {self.__class__.__name__}'
                     f' initiated with parameters: coin_ids={self.coin_ids},'
-                    f'vs_currency={self.vs_currency}, remote_initial={self.remote_initial}')
+                    f'vs_currency={self.vs_currency}, remote_initial={self.remote_initial}, the_initial_dict={self.the_initial_dict}')
 
     def _get_prices(self) -> None:
         """
         Calculates dict with coin names
         and their current prices
         """
+        self.coin_ids = list(self.the_initial_dict.keys())
         raw_prices: Dict[str, Dict[str, float]] = self.cg.get_price(ids=self.coin_ids, vs_currencies=self.vs_currency)
-        self.prices: Dict[str, float] = {key: value[self.vs_currency] for key, value in raw_prices.items()}
-        print(raw_prices)
-        print(self.prices)
+        self.prices = {key: value[self.vs_currency] for key, value in raw_prices.items()}
         logger.info(f'Got prices {self.prices}')
 
-    @staticmethod
-    def _get_initial_from_s3() -> Dict[str, float]:
-        s3_resource = s3_settings.session.resource('s3')
-        body = s3_resource.Object(s3_settings.S3_BUCKET, "initial_investments").get()['Body'].read().decode('utf-8')
-        initial_dict_s3: Dict[str, float] = {line.strip().split()[0]: float(line.strip().split()[1]) for line in body.split('\n')}
-        return initial_dict_s3
+    def _initialize_initial_dict(self) -> None:
+        if self.remote_initial:
+            s3_resource = s3_settings.session.resource('s3')
+            body = s3_resource.Object(s3_settings.S3_BUCKET, "initial_investments").get()['Body'].read().decode('utf-8')
+            self.the_initial_dict = {line.strip().split()[0]: float(line.strip().split()[1]) for line in body.split('\n')}
+        else:
+            self.the_initial_dict = initial_dict
 
-    def _calculate_returns(self, d: Dict[str, float]) -> str:
+
+    def _calculate_returns(self) -> str:
         result_dict: Dict[str, float] = {}
         msg: str = ""
-        for key, value in d.items():
+        for key, value in self.the_initial_dict.items():
             result_dict[key] = ((self.prices[key] - value) / value) * 100
             msg += f'Return for {key}: {round(result_dict[key], 3)}%\n'
         logger.info(f'**************** Calculated Returns *********************\n'
@@ -85,11 +87,8 @@ class DataHandler:
         return msg
 
     def send_msg(self) -> None:
+        self._initialize_initial_dict()
         self._get_prices()
-        if self.remote_initial:
-            initial_dict_s3 = self._get_initial_from_s3()
-            msg = self._calculate_returns(initial_dict_s3)
-        else:
-            msg = self._calculate_returns(initial_dict)
+        msg = self._calculate_returns()
         telegram_send(msg)
         logger.info(f"Message:\n {msg}\n was sent!")
