@@ -7,6 +7,7 @@ import click
 @click.option('-r', '--remote', is_flag=True, default=False, help="Get initial investments info from S3")
 def cci(remote: bool = False) -> None:
     if remote:
+        click.echo("Getting base prices from S3...")
         dh = DataHandler(remote_initial=True)
     else:
         dh = DataHandler()
