@@ -75,12 +75,11 @@ class DataHandler:
         else:
             self.the_initial_dict = initial_dict
 
-
     def _calculate_returns(self) -> str:
         result_dict: Dict[str, float] = {}
         msg: str = ""
         for key, value in self.the_initial_dict.items():
-            result_dict[key] = ((self.prices[key] - value) / value) * 100
+            result_dict[key] = round(((self.prices[key] - value) / value) * 100, 1)
             msg += f'Return for {key}: {round(result_dict[key], 3)}%\n'
         logger.info(f'**************** Calculated Returns *********************\n'
                     f'{result_dict}')
