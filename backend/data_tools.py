@@ -71,7 +71,7 @@ class DataHandler:
         if self.remote_initial:
             s3_resource = s3_settings.session.resource('s3')
             body = s3_resource.Object(s3_settings.S3_BUCKET, "initial_investments").get()['Body'].read().decode('utf-8')
-            self.the_initial_dict = {line.strip().split()[0]: float(line.strip().split()[1]) for line in body.split('\n')}
+            self.the_initial_dict = {line.strip().split()[0]: float(line.strip().split()[1]) for line in body.split('\n') if not line.startswith("#")}
         else:
             self.the_initial_dict = initial_dict
 
