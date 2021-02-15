@@ -2,12 +2,9 @@ id:01coin symbol:zoc name:01coin
 id:0-5x-long-algorand-token symbol:algohalf name:0.5X Long Algorand Token 
 id:0-5x-long-altcoin-index-token symbol:althalf name:0.5X Long Altcoin Index Token 
 id:0-5x-long-balancer-token symbol:balhalf name:0.5X Long Balancer Token 
-id:0-5x-long-bilibra-token symbol:trybhalf name:0.5X Long BiLira Token 
 id:0-5x-long-bitcoin-cash-token symbol:bchhalf name:0.5X Long Bitcoin Cash Token 
 id:0-5x-long-bitcoin-sv-token symbol:bsvhalf name:0.5X Long Bitcoin SV Token 
 id:0-5x-long-bitcoin-token symbol:half name:0.5X Long Bitcoin Token 
-id:0-5x-long-bitmax-token-token symbol:btmxhalf name:0.5X Long BitMax Token Token 
-id:0-5x-long-bnb-token symbol:bnbhalf name:0.5X Long BNB Token 
 id:0-5x-long-cardano-token symbol:adahalf name:0.5X Long Cardano Token 
 id:0-5x-long-chainlink-token symbol:linkhalf name:0.5X Long Chainlink Token 
 id:0-5x-long-compound-usdt-token symbol:cusdthalf name:0.5X Long Compound USDT Token 
@@ -19,10 +16,7 @@ id:0-5x-long-echange-token-index-token symbol:exchhalf name:0.5X Long Exchange T
 id:0-5x-long-eos-token symbol:eoshalf name:0.5X Long EOS Token 
 id:0-5x-long-ethereum-classic-token symbol:etchalf name:0.5X Long Ethereum Classic Token 
 id:0-5x-long-ethereum-token symbol:ethhalf name:0.5X Long Ethereum Token 
-id:0-5x-long-huobi-token-token symbol:hthalf name:0.5X Long Huobi Token Token 
 id:0-5x-long-kyber-network-token symbol:knchalf name:0.5X Long Kyber Network Token 
-id:0-5x-long-leo-token symbol:leohalf name:0.5X Long LEO Token 
-id:0-5x-long-litecoin-token symbol:ltchalf name:0.5X Long Litecoin Token 
 id:0-5x-long-matic-token symbol:matichalf name:0.5X Long Matic Token 
 id:0-5x-long-midcap-index-token symbol:midhalf name:0.5X Long Midcap Index Token 
 id:0-5x-long-okb-token symbol:OKBHALF name:0.5X Long OKB Token 
@@ -31,11 +25,8 @@ id:0-5x-long-privacy-index-token symbol:privhalf name:0.5X Long Privacy Index To
 id:0-5x-long-shitcoin-index-token symbol:halfshit name:0.5X Long Shitcoin Index Token 
 id:0-5x-long-swipe-token symbol:sxphalf name:0.5X Long Swipe Token 
 id:0-5x-long-tether-gold-token symbol:xauthalf name:0.5X Long Tether Gold Token 
-id:0-5x-long-tether-token symbol:usdthalf name:0.5X Long Tether Token 
 id:0-5x-long-tezos-token symbol:xtzhalf name:0.5X Long Tezos Token 
 id:0-5x-long-theta-network-token symbol:thetahalf name:0.5X Long Theta Network Token 
-id:0-5x-long-tomochain-token symbol:tomohalf name:0.5X Long TomoChain Token 
-id:0-5x-long-trx-token symbol:trxhalf name:0.5X Long TRX Token 
 id:0-5x-long-xrp-token symbol:xrphalf name:0.5X Long XRP Token 
 id:0cash symbol:zch name:0cash 
 id:0chain symbol:zcn name:0chain 
@@ -56,7 +47,6 @@ id:1x-long-btc-implied-volatility-token symbol:bvol name:Bitcoin Volatility Toke
 id:1x-short-algorand-token symbol:algohedge name:1X Short Algorand Token 
 id:1x-short-bitcoin-cash-token symbol:bchhedge name:1X Short Bitcoin Cash Token 
 id:1x-short-bitcoin-token symbol:hedge name:1X Short Bitcoin Token 
-id:1x-short-bitmax-token-token symbol:btmxhedge name:1X Short BitMax Token Token 
 id:1x-short-bnb-token symbol:bnbhedge name:1X Short BNB Token 
 id:1x-short-btc-implied-volatility symbol:ibvol name:Inverse Bitcoin Volatility Token 
 id:1x-short-cardano-token symbol:adahedge name:1X Short Cardano Token 
@@ -67,11 +57,8 @@ id:1x-short-cosmos-token symbol:atomhedge name:1X Short Cosmos Token
 id:1x-short-defi-index-token symbol:defihedge name:1X Short DeFi Index Token 
 id:1x-short-dogecoin-token symbol:dogehedge name:1X Short Dogecoin Token 
 id:1x-short-eos-token symbol:eoshedge name:1X Short EOS Token 
-id:1x-short-ethereum-classic-token symbol:etchedge name:1X Short Ethereum Classic Token 
 id:1x-short-ethereum-token symbol:ethhedge name:1X Short Ethereum Token 
 id:1x-short-exchange-token-index-token symbol:exchhedge name:1X Short Exchange Token Index Token 
-id:1x-short-huobi-token-token symbol:hthedge name:1X Short Huobi Token Token 
-id:1x-short-kyber-network-token symbol:knchedge name:1X Short Kyber Network Token 
 id:1x-short-leo-token symbol:leohedge name:1X Short LEO Token 
 id:1x-short-litecoin-token symbol:ltchedge name:1X Short Litecoin Token 
 id:1x-short-matic-token symbol:matichedge name:1X Short Matic Token 
@@ -79,7 +66,6 @@ id:1x-short-okb-token symbol:okbhedge name:1X Short OKB Token
 id:1x-short-privacy-index-token symbol:privhedge name:1X Short Privacy Index Token 
 id:1x-short-shitcoin-index-token symbol:hedgeshit name:1X Short Shitcoin Index Token 
 id:1x-short-swipe-token symbol:sxphedge name:1X Short Swipe Token 
-id:1x-short-tether-gold-token symbol:xauthedge name:1X Short Tether Gold Token 
 id:1x-short-tezos-token symbol:xtzhedge name:1X Short Tezos Token 
 id:1x-short-theta-network-token symbol:thetahedge name:1X Short Theta Network Token 
 id:1x-short-tomochain-token symbol:tomohedge name:1X Short TomoChain Token 
@@ -186,7 +172,6 @@ id:3xt symbol:3xt name:3XT
 id:404 symbol:404 name:404 
 id:42-coin symbol:42 name:42-coin 
 id:451pcbcom symbol:pcb name:451PCBcom 
-id:4a-coin symbol:4ac name:4A Coin 
 id:4artechnologies symbol:4art name:4ART Coin 
 id:4new symbol:kwatt name:4New 
 id:502-bad-gateway-token symbol:z502 name:502 Bad Gateway Token 
@@ -237,6 +222,7 @@ id:ace-casino symbol:ace name:Ace Entertainment
 id:aced symbol:aced name:Aced 
 id:ac-exchange-token symbol:acxt name:AC eXchange Token 
 id:achain symbol:act name:Achain 
+id:ac-milan-fan-token symbol:acm name:AC Milan Fan Token 
 id:acoconut symbol:ac name:ACoconut 
 id:acoin symbol:acoin name:Acoin 
 id:acreage-coin symbol:acr name:Acreage Coin 
@@ -281,6 +267,7 @@ id:africunia-bank symbol:afcash name:AFRICUNIA BANK
 id:afro symbol:afro name:Afro 
 id:afrodex symbol:afrox name:AfroDex 
 id:afrodex-labs-token symbol:afdlt name:AfroDex Labs Token 
+id:aga-rewards symbol:edc name:Edcoin 
 id:aga-token symbol:aga name:AGA Token 
 id:agavecoin symbol:agvc name:AgaveCoin 
 id:agetron symbol:aget name:Agetron 
@@ -330,6 +317,7 @@ id:aleph symbol:aleph name:Aleph.im
 id:alex symbol:alex name:Alex 
 id:algorand symbol:algo name:Algorand 
 id:algory symbol:alg name:Algory 
+id:algovest symbol:avs name:AlgoVest 
 id:alibabacoin symbol:abbc name:ABBC 
 id:alis symbol:alis name:ALIS 
 id:all-best-ico symbol:allbi name:ALL BEST ICO 
@@ -337,6 +325,7 @@ id:alldex-alliance symbol:axa name:Alldex Alliance
 id:all-for-one-business symbol:afo name:All For One Business 
 id:allianceblock symbol:albt name:AllianceBlock 
 id:alliance-cargo-direct symbol:acd name:Alliance Cargo Direct 
+id:alliance-fan-token symbol:all name:Alliance Fan Token 
 id:alliance-x-trading symbol:axt name:Alliance X Trading 
 id:alligator-fractal-set symbol:gator name:Alligator + Fractal Set 
 id:allive symbol:alv name:Allive 
@@ -348,6 +337,7 @@ id:ally symbol:aly name:Ally
 id:almace-shards symbol:almx name:Almace Shards 
 id:alpaca symbol:alpa name:Alpaca 
 id:alp-coin symbol:alp name:ALP Coin 
+id:alpha5 symbol:a5t name:Alpha5 
 id:alphacat symbol:acat name:Alphacat 
 id:alpha-coin symbol:apc name:Alpha Coin 
 id:alphadex symbol:dex name:AlphaDex 
@@ -402,6 +392,7 @@ id:anti-fraud-chain symbol:afc name:Anti-Fraud Chain
 id:antique-zombie-shards symbol:zomb name:Antique Zombie Shards 
 id:antra symbol:antr name:Antra 
 id:anyone symbol:any name:ANYONE 
+id:anysale symbol:sale name:AnySale 
 id:anyswap symbol:any name:Anyswap 
 id:aos symbol:aos name:AOS 
 id:apecoin symbol:ape name:APEcoin 
@@ -431,6 +422,7 @@ id:aquariuscoin symbol:arco name:AquariusCoin
 id:aquila-protocol symbol:aux name:Aquila Protocol 
 id:aragon symbol:ant name:Aragon 
 id:aragon-china-token symbol:anc name:Aragon China 
+id:ara-token symbol:ara name:Ara Token 
 id:araw-token symbol:araw name:ARAW Token 
 id:arbidex symbol:abx name:Arbidex 
 id:arbiswap symbol:aswap name:Arbiswap 
@@ -517,6 +509,7 @@ id:atomic-wallet-coin symbol:awc name:Atomic Wallet Coin
 id:atromg8 symbol:ag8 name:ATROMG8 
 id:attila symbol:att name:Attila 
 id:attn symbol:attn name:ATTN 
+id:auction symbol:auction name:Auction 
 id:auctus symbol:auc name:Auctus 
 id:audax symbol:audax name:Audax 
 id:audiocoin symbol:adc name:AudioCoin 
@@ -531,7 +524,7 @@ id:aurora symbol:aoa name:Aurora
 id:auroracoin symbol:aur name:Auroracoin 
 id:aurora-dao symbol:idex name:IDEX 
 id:aurumcoin symbol:au name:AurumCoin 
-id:auruscoin symbol:awx name:AurusCOIN 
+id:auruscoin symbol:awx name:AurusDeFi 
 id:aurusgold symbol:awg name:AurusGOLD 
 id:auscoin symbol:ausc name:Auscoin 
 id:australia-cash symbol:aus name:Australia Cash 
@@ -584,6 +577,7 @@ id:balkan-coin symbol:bkc name:Balkan coin
 id:ball-coin symbol:ball name:BALL Coin 
 id:balloon-coin symbol:balo name:Balloon Coin 
 id:ballotbox symbol:bbx name:Ballotbox 
+id:bamboo-defi symbol:bamboo name:BambooDeFi 
 id:bamboo-token symbol:boo name:Bamboo 
 id:bananados symbol:yban name:BananoDOS 
 id:banana-finance symbol:banana name:Banana Finance 
@@ -617,6 +611,7 @@ id:base-protocol symbol:base name:Base Protocol
 id:basic symbol:basic name:BASIC 
 id:basic-attention-token symbol:bat name:Basic Attention Token 
 id:basid-coin symbol:basid name:Basid Coin 
+id:basis-bond symbol:bab name:Basis Bond 
 id:basis-cash symbol:bac name:Basis Cash 
 id:basis-coin-cash symbol:bcc name:Basis Coin Cash 
 id:basiscoin-share symbol:bcs name:Basis Coin Share 
@@ -656,7 +651,6 @@ id:beekan symbol:bkbt name:BeeKan / Beenews
 id:beeng-token symbol:beeng name:BEENG Token 
 id:beenode symbol:bnode name:Beenode 
 id:beer-money symbol:beer name:Beer Money 
-id:beestore symbol:bht name:BeeStore 
 id:beetle-coin symbol:beet name:Beetle Coin 
 id:beetr symbol:btr name:BeeTR 
 id:befasterholdertoken symbol:bfht name:BeFasterHolderToken 
@@ -733,6 +727,7 @@ id:binance-usd symbol:busd name:Binance USD
 id:binance-vnd symbol:bvnd name:Binance VND 
 id:binarium symbol:bin name:Binarium 
 id:bincentive symbol:bcnt name:Bincentive 
+id:binjit-coin symbol:bnj name:Binjit Coin 
 id:bintex-futures symbol:bntx name:Bintex Futures 
 id:biocrypt symbol:bio name:BioCrypt 
 id:biokkoin symbol:bkkg name:Biokkoin 
@@ -741,6 +736,7 @@ id:bip symbol:bip name:Minter
 id:birake symbol:bir name:Birake 
 id:birdchain symbol:bird name:Birdchain 
 id:bird-money symbol:bird name:Bird.Money 
+id:birthday-cake symbol:bday name:Birthday Cake 
 id:bismuth symbol:bis name:Bismuth 
 id:bispex symbol:bpx name:Bispex 
 id:bitalgo symbol:alg name:Bitalgo 
@@ -781,6 +777,7 @@ id:bitcoin-cash-abc-2 symbol:bcha name:Bitcoin Cash ABC
 id:bitcoin-cash-sv symbol:bsv name:Bitcoin SV 
 id:bitcoin-classic symbol:bxc name:Bitcoin Classic 
 id:bitcoin-classic-token symbol:bct name:Bitcoin Classic Token 
+id:bitcoin-company-network symbol:bitn name:Bitcoin and Company Network 
 id:bitcoin-confidential symbol:bc name:Bitcoin Confidential 
 id:bitcoin-cure symbol:byron name:Byron 
 id:bitcoin-cz symbol:bcz name:Bitcoin CZ 
@@ -846,7 +843,6 @@ id:bitcore symbol:btx name:BitCore
 id:bitcorn symbol:corn name:BITCORN 
 id:bitcratic symbol:bct name:Bitcratic 
 id:bitcratic-revenue symbol:bctr name:Bitcratic Revenue 
-id:bitcrystals symbol:bcy name:BitCrystals 
 id:bitcurate symbol:btcr name:Bitcurate 
 id:bitcurrency symbol:bc name:Bitcurrency 
 id:bitdefi symbol:bfi name:BitDefi 
@@ -916,9 +912,9 @@ id:bitswift symbol:bits name:Bitswift
 id:bittiger symbol:bttr name:BitTiger 
 id:bitto-exchange symbol:BITTO name:BITTO 
 id:bittoken symbol:bitt name:BITToken 
-id:bit-token-economy symbol:bitc name:Bit Token Economy 
 id:bittokens symbol:bxt name:BitTokens 
 id:bittorrent-2 symbol:btt name:BitTorrent 
+id:bittorro symbol:torro name:BitTorro 
 id:bittracksystems symbol:bttr name:BittrackSystems 
 id:bit-trust-system symbol:biut name:Bit Trust System 
 id:bittube symbol:tube name:BitTube 
@@ -939,6 +935,7 @@ id:bkex-token symbol:bkk name:BKEX Token
 id:blackcoin symbol:blk name:BlackCoin 
 id:black-diamond-rating symbol:hzt name:Black Diamond Rating 
 id:blackdragon-token symbol:BDT name:BlackDragon Token 
+id:blackfisk symbol:blfi name:BlackFisk 
 id:blackholeswap-compound-dai-usdc symbol:bhsc name:BlackHoleSwap-Compound DAI/USDC 
 id:blackmoon-crypto symbol:bmc name:Blackmoon Crypto 
 id:blacknet symbol:bln name:Blacknet 
@@ -968,6 +965,7 @@ id:blockchainpoland symbol:bcp name:BlockchainPoland
 id:blockchain-quotations-index-token symbol:bqt name:Blockchain Quotations Index Token 
 id:blockcloud symbol:bloc name:Blockcloud 
 id:blockclout symbol:clout name:BLOCKCLOUT 
+id:block-collider symbol:emb name:Overline Emblem 
 id:block-duelers symbol:bdt name:Block Duelers 
 id:blockgrain symbol:agri name:AgriChain 
 id:blockidcoin symbol:bid name:Blockidcoin 
@@ -1007,6 +1005,7 @@ id:bmchain-token symbol:bmt name:BMCHAIN token
 id:bmj-coin symbol:bmj name:BMJ Coin 
 id:bmj-master-nodes symbol:bmj name:BMJ Master Nodes 
 id:bmtoken symbol:BMT name:BMToken 
+id:bnb48-club-token symbol:koge name:BNB48 Club Token 
 id:bnktothefuture symbol:bft name:BnkToTheFuture 
 id:bnoincoin symbol:bnc name:Bnoincoin 
 id:bnsd-finance symbol:bnsd name:BNSD Finance 
@@ -1021,6 +1020,7 @@ id:bobs_repair symbol:bob name:Bob's Repair
 id:bodhi-network symbol:nbot name:Bodhi Network 
 id:boid symbol:boid name:Boid 
 id:boldman-capital symbol:bold name:Boldman Capital 
+id:boliecoin symbol:bolc name:Boliecoin 
 id:bolivarcoin symbol:boli name:Bolivarcoin 
 id:bollo-token symbol:bolo name:Bollo Token 
 id:bolt symbol:bolt name:Bolt 
@@ -1053,6 +1053,7 @@ id:boringdao-btc symbol:obtc name:BoringDAO BTC
 id:bosagora symbol:boa name:BOSAGORA 
 id:boscoin-2 symbol:bos name:BOScoin 
 id:boscore symbol:bos name:BOSCore 
+id:bot-ocean symbol:bots name:Bot Ocean 
 id:bottos symbol:bto name:Bottos 
 id:botxcoin symbol:botx name:BOTXCOIN 
 id:bounce-token symbol:bot name:Bounce 
@@ -1102,10 +1103,10 @@ id:btc-network-demand-set-ii symbol:byte name:BTC Network Demand Set II
 id:btc-on-chain-beta-portfolio-set symbol:bocbp name:BTC On-Chain Beta Portfolio Set 
 id:btc-range-bound-min-volatility-set symbol:btcminvol name:BTC Range Bound Min Volatility Set 
 id:btc-rsi-crossover-yield-set symbol:btcrsiapy name:BTC RSI Crossover Yield Set 
-id:btcshort symbol:btcshort name:BTCShort 
 id:btc-standard-hashrate-token symbol:btcst name:BTC Standard Hashrate Token 
 id:btecoin symbol:bte name:BTEcoin 
 id:btf symbol:btf name:Bitcoin Faith 
+id:bt-finance symbol:bt name:BT.Finance 
 id:btour-chain symbol:btour name:BTour Chain 
 id:btse-token symbol:btse name:BTSE Token 
 id:btsunicorn symbol:btsucn name:BTSunicorn 
@@ -1124,7 +1125,6 @@ id:bullbearethereum-set-ii symbol:bbe name:BullBearEthereum Set II
 id:bulleon symbol:bul name:Bulleon 
 id:bullers-coin symbol:blcc name:Bullers Coin 
 id:bullion symbol:cbx name:Bullion 
-id:bullionpay symbol:bullion name:BullionPAY 
 id:bullionschain symbol:blc name:BullionsChain 
 id:bulls symbol:bulls name:Bulls 
 id:bullswap-protocol symbol:bvl name:Bullswap Protocol 
@@ -1135,11 +1135,13 @@ id:bunnytoken symbol:bunny name:BunnyToken
 id:burency symbol:buy name:Burency 
 id:burger-swap symbol:burger name:Burger Swap 
 id:burndrop symbol:bd name:BurnDrop 
+id:burn-yield-burn symbol:xyx name:Burn Yield Burn 
 id:burst symbol:burst name:Burst 
 id:business-credit-alliance-chain symbol:bcac name:Business Credit Alliance Chain 
 id:business-credit-substitute symbol:bcs name:Business Credit Substitute 
 id:business-market-world symbol:bmw name:Business Market World 
 id:busyprotocol symbol:busy name:Busy Protocol 
+id:butterfly-protocol-2 symbol:bfly name:Butterfly Protocol 
 id:buxcoin symbol:bux name:BUXCOIN 
 id:buy-coin-pos symbol:bcp name:BuyCoinPos 
 id:buysell symbol:bull name:BuySell 
@@ -1160,6 +1162,7 @@ id:bzx-protocol symbol:bzrx name:bZx Protocol
 id:cachecoin symbol:cach name:Cachecoin 
 id:cache-gold symbol:cgt name:CACHE Gold 
 id:cactus-finance symbol:cas name:Cactus Finance 
+id:cafeswap-token symbol:brew name:CafeSwap Token 
 id:caica-coin symbol:cicc name:CAICA Coin 
 id:caixa-pay symbol:cxp name:Caixa Pay 
 id:cajutel symbol:caj name:Cajutel 
@@ -1303,6 +1306,7 @@ id:ciupek-capital-coin symbol:ccc name:Ciupek Capital Coin
 id:civic symbol:cvc name:Civic 
 id:civil symbol:CVL name:Civil 
 id:civitas symbol:civ name:Civitas 
+id:civitas-protocol symbol:cvt name:Civitas Protocol 
 id:clams symbol:clam name:Clams 
 id:clap-clap-token symbol:cct name:Clap Clap Token 
 id:clash-token symbol:sct name:Clash Token 
@@ -1347,13 +1351,11 @@ id:coin-artist symbol:coin name:Coin Artist
 id:coinbene-future-token symbol:cft name:CoinBene Future Token 
 id:coinbene-token symbol:coni name:Coinbene Token 
 id:coinclaim symbol:clm name:CoinClaim 
-id:coinclix symbol:clx name:CoinClix 
 id:coincome symbol:cim name:COINCOME 
 id:coin-controller-cash symbol:ccc name:Coindom 
 id:coindeal-token symbol:cdl name:CoinDeal Token 
 id:coindicatorbtc-set symbol:coinbtc name:CoindicatorBTC Set 
 id:coindom symbol:scc name:Stem Cell Coin 
-id:coindy symbol:cody name:Coindy 
 id:coinex-token symbol:cet name:CoinEx Token 
 id:coinfi symbol:cofi name:CoinFi 
 id:coinfirm-amlt symbol:amlt name:AMLT Network 
@@ -1382,7 +1384,6 @@ id:colossuscoinxt symbol:colx name:ColossusXT
 id:combine-finance symbol:comb name:Combine.finance 
 id:combo-2 symbol:comb name:Combo 
 id:commerceblock-token symbol:cbt name:CommerceBlock Token 
-id:commercial-data-storage symbol:cds name:Commercial Data Storage 
 id:commercium symbol:cmm name:Commercium 
 id:commodity-ad-network symbol:cdx name:CDX Network 
 id:communication-development-resources-token symbol:cdr name:Communication Development Resources Token 
@@ -1485,6 +1486,8 @@ id:crowdsalenetworkplatform symbol:csnp name:CrowdSale Network
 id:crowdwiz symbol:wiz name:CrowdWiz 
 id:crown symbol:crw name:Crown 
 id:crown-finance symbol:crwn name:Crown Finance 
+id:crowns symbol:cws name:Crowns 
+id:crow-token symbol:crow name:Crow Token 
 id:crust-network symbol:cru name:Crust Network 
 id:cruzbit symbol:cruz name:Cruzbit 
 id:crybet symbol:cbt name:CryBet 
@@ -1553,6 +1556,7 @@ id:cryptosolartech symbol:cst name:Cryptosolartech
 id:cryptosoul symbol:soul name:CryptoSoul 
 id:crypto-sports symbol:cspn name:Crypto Sports 
 id:cryptospot-token symbol:spot name:Cryptospot Token 
+id:cryptotask-2 symbol:ctask name:CryptoTask 
 id:cryptotipsfr symbol:crts name:Cryptotipsfr 
 id:crypto-user-base symbol:cub name:Crypto User Base 
 id:cryptoverificationcoin symbol:cvcc name:CryptoVerificationCoin 
@@ -1627,7 +1631,9 @@ id:dandy symbol:dandy name:Dandy Dego
 id:dango symbol:dango name:Dango 
 id:dao-casino symbol:bet name:DAOBet 
 id:daofi symbol:daofi name:DAOfi 
+id:dao-maker symbol:dao name:DAO Maker 
 id:daostack symbol:gen name:DAOstack 
+id:daoventures symbol:dvg name:DAOventures 
 id:dapp symbol:dapp name:LiquidApps 
 id:dappcents symbol:dpc name:Dappcents 
 id:dapp-com symbol:dappt name:Dapp.com 
@@ -1675,14 +1681,15 @@ id:dawn-protocol symbol:dawn name:Dawn Protocol
 id:day symbol:day name:DAY 
 id:dcoin-token symbol:dt name:Dcoin Token 
 id:d-community symbol:dili name:D Community 
-id:dcorp symbol:drp name:DCORP 
 id:ddkoin symbol:ddk name:DDKoin 
 id:ddmcoin symbol:ddm name:DDMCoin 
+id:dds-store symbol:dds name:DDS.Store 
 id:dea symbol:dea name:DEA 
 id:deapcoin symbol:dep name:DEAPCOIN 
 id:debase symbol:debase name:Debase 
 id:debitcoin symbol:dbtc name:Debitcoin 
 id:debitum-network symbol:deb name:Debitum Network 
+id:debunk symbol:dbnk name:Debunk 
 id:decash symbol:desh name:DeCash 
 id:decent symbol:dct name:Decent 
 id:decentbet symbol:dbet name:DecentBet 
@@ -1692,6 +1699,7 @@ id:decentraland symbol:mana name:Decentraland
 id:decentral-games symbol:dg name:Decentral Games 
 id:decentralized-advertising symbol:dad name:DAD 
 id:decentralized-asset-trading-platform symbol:datp name:Decentralized Asset Trading Platform 
+id:decentralized-bitcoin symbol:dbtc name:Decentralized Bitcoin 
 id:decentralized-crypto-token symbol:dcto name:Decentralized Crypto Token 
 id:decentralized-currency-assets symbol:dca name:Decentralize Currency 
 id:decentralized-data-assets-management symbol:ddam name:Decentralized Data Assets Management 
@@ -1726,13 +1734,16 @@ id:definex symbol:dswap name:Definex
 id:definitex symbol:dfx name:Definitex 
 id:definition-network symbol:dzi name:DeFinition Network 
 id:defi-omega symbol:dfio name:DeFi Omega 
+id:defi-on-mcw symbol:dfm name:DeFi on MCW 
 id:defipie symbol:PIE name:DeFiPie 
 id:defipulse-index symbol:dpi name:DeFiPulse Index 
 id:defis symbol:xgm name:Defis 
 id:defi-shopping-stake symbol:dss name:Defi Shopping Stake 
 id:defis-network symbol:dfs name:Defis Network 
 id:defisocial symbol:dfsocial name:DefiSocial 
+id:defi-top-5-tokens-index symbol:defi5 name:DEFI Top 5 Tokens Index 
 id:defi-yield-protocol symbol:dyp name:DeFi Yield Protocol 
+id:defla symbol:defla name:Defla 
 id:deflacash symbol:dfc name:DeflaCash 
 id:deflacoin symbol:defl name:Deflacoin 
 id:deflect symbol:deflct name:Deflect 
@@ -1746,7 +1757,6 @@ id:dejave symbol:djv name:Dejave
 id:deligence symbol:ira name:Diligence 
 id:deli-of-thrones symbol:dotx name:DeFi of Thrones 
 id:delion symbol:dln name:Delion 
-id:deli-top-5-tokens-index symbol:defi5 name:DEFI Top 5 Tokens Index 
 id:delphi-chain-link symbol:dcl name:Delphi Chain Link 
 id:delphy symbol:dpy name:Delphy 
 id:deltachain symbol:delta name:DeltaChain 
@@ -1760,6 +1770,7 @@ id:deoncash symbol:deon name:DeonCash
 id:deonex-token symbol:don name:DEONEX Token 
 id:depay symbol:depay name:DePay 
 id:dequant symbol:deq name:Dequant 
+id:deri-protocol symbol:deri name:Deri Protocol 
 id:derivadao symbol:ddx name:DerivaDAO 
 id:derivex symbol:dvx name:Derivex 
 id:dero symbol:dero name:Dero 
@@ -1771,6 +1782,7 @@ id:dether symbol:DTH name:Dether
 id:deus-finance symbol:deus name:DEUS Finance 
 id:deus-synthetic-coinbase-iou symbol:wcoinbase-iou name:DEUS Synthetic Coinbase IOU 
 id:deutsche-emark symbol:dem name:Deutsche eMark 
+id:deva-token symbol:deva name:DEVA Token 
 id:devault symbol:dvt name:DeVault 
 id:devcoin symbol:dvc name:Devcoin 
 id:devery symbol:eve name:Devery 
@@ -1781,6 +1793,7 @@ id:dexa-coin symbol:dexa name:DEXA COIN
 id:dexe symbol:dexe name:DeXe 
 id:dexfin symbol:dxf name:Dexfin 
 id:dexkit symbol:kit name:DexKit 
+id:dexmex symbol:dexm name:Dexmex 
 id:dexter symbol:dxr name:DEXTER 
 id:dextf symbol:dextf name:DEXTF 
 id:dextoken-governance symbol:dexg name:Dextoken Governance 
@@ -1789,11 +1802,8 @@ id:dextrust symbol:dets name:Dextrust
 id:dfe-finance symbol:dfe name:DFE.Finance 
 id:dfinity-iou symbol:icp name:Dfinity [IOU] 
 id:dfohub symbol:buidl name:dfohub 
-id:dforce-dai symbol:ddai name:dForce DAI 
 id:dforce-goldx symbol:goldx name:dForce GOLDx 
 id:dforce-token symbol:df name:dForce Token 
-id:dforce-usdc symbol:dusdc name:dForce USDC 
-id:dforce-usdt symbol:dusdt name:dForce USDT 
 id:dgpayment symbol:dgp name:DGPayment 
 id:dhedge-dao symbol:dht name:dHEDGE DAO 
 id:dia-data symbol:DIA name:DIA 
@@ -1814,6 +1824,7 @@ id:digifinextoken symbol:dft name:DigiFinexToken
 id:digimax symbol:dgmt name:DigiMax 
 id:digimoney symbol:dgm name:DigiMoney 
 id:digipharm symbol:dph name:Digipharm 
+id:digital-antares-dollar symbol:dant name:Digital Antares Dollar 
 id:digitalassets symbol:dagt name:Digital Asset Guarantee Token 
 id:digitalbits symbol:xdb name:DigitalBits 
 id:digitalcoin symbol:dgc name:Digitalcoin 
@@ -1828,7 +1839,6 @@ id:digitalprice symbol:dp name:DigitalPrice
 id:digital-rand symbol:dzar name:Digital Rand 
 id:digital-reserve-currency symbol:drc name:Digital Reserve Currency 
 id:digital-ticks symbol:dtx name:Digital Ticks 
-id:digitalusd symbol:dusd name:DigitalUSD 
 id:digital-wallet symbol:dwc name:Digital Wallet 
 id:digitex-futures-exchange symbol:dgtx name:Digitex Token 
 id:digiwill symbol:dgw name:Digiwill 
@@ -2004,6 +2014,7 @@ id:eidos symbol:eidos name:EIDOS
 id:eight-hours symbol:ehrt name:Eight Hours 
 id:einsteinium symbol:emc2 name:Einsteinium 
 id:elamachain symbol:elama name:Elamachain 
+id:elastic-bitcoin symbol:xbt name:Elastic Bitcoin 
 id:elastos symbol:ela name:Elastos 
 id:eldorado-token symbol:erd name:ELDORADO TOKEN 
 id:electra symbol:eca name:Electra 
@@ -2131,10 +2142,11 @@ id:eth-20-ma-crossover-yield-set-ii symbol:eth20macoapy name:ETH 20 MA Crossover
 id:eth-26-day-ema-crossover-set symbol:eth26emaco name:ETH 26 Day EMA Crossover Set 
 id:eth-26-ema-crossover-yield-set symbol:ethemaapy name:ETH 26 EMA Crossover Yield Set 
 id:eth-26-ma-crossover-yield-ii symbol:ethemaapy name:ETH 26 EMA Crossover Yield II 
+id:eth2-staking-by-poolx symbol:eth2 name:Eth 2.0 Staking by Pool-X 
 id:eth-50-day-ma-crossover-set symbol:eth50smaco name:ETH 50 Day MA Crossover Set 
 id:eth-ai-limit-loss symbol:ell name:ETH AI Limit Loss 
 id:ethanol symbol:enol name:Ethanol 
-id:ethart symbol:arte name:ethArt 
+id:ethart symbol:arte name:Items 
 id:ethbnt symbol:ethbnt name:ETHBNT Relay 
 id:ethbold symbol:etbold name:ETHBOLD 
 id:eth-btc-75-25-weight-set symbol:ethbtc7525 name:ETH BTC 75%/25% Weight Set 
@@ -2177,6 +2189,7 @@ id:etherparty symbol:fuel name:Etherparty
 id:etherpay symbol:ethpy name:Etherpay 
 id:ethersportz symbol:esz name:EtherSportz 
 id:etherzero symbol:etz name:Ether Zero 
+id:ethichub symbol:ethix name:EthicHub 
 id:ethlend symbol:lend name:Aave [OLD] 
 id:eth-limited symbol:eld name:ETH.limiteD 
 id:eth-link-price-action-candlestick-set symbol:linkethpa name:ETH/LINK Price Action Candlestick Set 
@@ -2194,7 +2207,6 @@ id:eth-rsi-60-40-crossover-set symbol:ethrsi6040 name:ETH RSI 60/40 Crossover Se
 id:eth-rsi-60-40-yield-set symbol:ethrsiapy name:ETH RSI 60/40 Yield Set 
 id:eth-rsi-60-40-yield-set-ii symbol:ethrsiapy name:ETH RSI 60/40 Yield Set II 
 id:eth-smart-beta-set symbol:ethsb name:ETH Smart Beta Set 
-id:eth-ta-set-ii symbol:ethusdcta name:ETH TA Set II 
 id:eth-trending-alpha-lt-set-ii symbol:eta name:ETH Trending Alpha LT Set II 
 id:eth-trending-alpha-st-set-ii symbol:etas name:ETH Trending Alpha ST Set II 
 id:ethusd-adl-4h-set symbol:ethusdadl4 name:ETHUSD ADL 4H Set 
@@ -2222,6 +2234,7 @@ id:evencoin symbol:evn name:EvenCoin
 id:eventchain symbol:evc name:EventChain 
 id:everex symbol:evx name:Everex 
 id:evergreencoin symbol:egc name:EverGreenCoin 
+id:everid symbol:id name:Everest 
 id:everipedia symbol:iq name:Everipedia 
 id:everitoken symbol:evt name:EveriToken 
 id:everus symbol:evr name:Everus 
@@ -2231,7 +2244,7 @@ id:everyonetoken symbol:EOTO name:Everyonetoken
 id:every-original symbol:eveo name:EVERY ORIGINAL 
 id:evil-coin symbol:evil name:Evil Coin 
 id:evimeria symbol:evi name:Evimeria 
-id:evocar symbol:evo name:Evocar 
+id:evolution-finance symbol:evn name:Evolution Finance 
 id:excavo-finance symbol:cavo name:Excavo Finance 
 id:exchain symbol:ext name:ExChain Token 
 id:exchangecoin symbol:excc name:ExchangeCoin 
@@ -2262,15 +2275,16 @@ id:exus-coin symbol:exus name:EXUS Coin
 id:eyes-protocol symbol:eyes name:EYES Protocol 
 id:ezoow symbol:ezw name:EZOOW 
 id:ezystayz symbol:ezy name:Ezystayz 
-id:fabrk symbol:fab name:FABRK Token 
 id:face symbol:face name:Faceter 
 id:facite symbol:fit name:Facite 
 id:factom symbol:fct name:Factom 
 id:facts symbol:bkc name:FACTS 
 id:fairgame symbol:fair name:FairGame 
+id:fairum symbol:fai name:Fairum 
 id:fairyland symbol:fldt name:FairyLand 
 id:faithcoin symbol:faith name:FaithCoin 
 id:falcon-token symbol:fnt name:Falcon Project 
+id:falopa symbol:flp name:Falopa 
 id:fame symbol:fame name:Fame 
 id:fanaticos-cash symbol:fch name:Fanáticos Cash 
 id:fanbi-token symbol:fbt name:FANBI TOKEN 
@@ -2281,6 +2295,7 @@ id:fantasy-gold symbol:fgc name:Fantasy Gold
 id:fantom symbol:ftm name:Fantom 
 id:fanzy symbol:fx1 name:FANZY 
 id:farm-defi symbol:pfarm name:Farm Defi 
+id:farming-bad symbol:meth name:Farming Bad 
 id:farmland-protocol symbol:far name:Farmland Protocol 
 id:fashion-coin symbol:fshn name:Fashion Coin 
 id:fast symbol:fast name:Fast 
@@ -2296,6 +2311,7 @@ id:fedoracoin symbol:tips name:Fedoracoin
 id:fedora-gold symbol:fed name:Fedora Gold 
 id:fee-active-collateral-token symbol:fact name:Fee Active Collateral Token 
 id:feellike symbol:fll name:Feellike 
+id:feg-token symbol:feg name:FEG Token 
 id:feirm symbol:xfe name:FEIRM 
 id:felix symbol:flx name:Felix 
 id:fera symbol:fera name:Fera 
@@ -2310,6 +2326,7 @@ id:fidelity-token-2 symbol:fdt name:Fidelity Token
 id:fidex-exchange symbol:fex name:FIDEX Exchange 
 id:fil12 symbol:fil12 name:FIL12 
 id:fil36 symbol:fil36 name:FIL36 
+id:filda symbol:filda name:Filda 
 id:filecash symbol:fic name:Filecash 
 id:filecoin symbol:fil name:Filecoin 
 id:filecoin-iou symbol:fil6 name:FIL6 
@@ -2331,6 +2348,7 @@ id:finswap symbol:fnsp name:Finswap
 id:fintab symbol:fntb name:FinTab 
 id:fin-token symbol:fin name:Fuel Injection Network 
 id:fintrux symbol:ftx name:FintruX 
+id:finxflo symbol:fxf name:Finxflo 
 id:fiola symbol:fla name:Fiola 
 id:fio-protocol symbol:fio name:FIO Protocol 
 id:firdaos symbol:fdo name:Firdaos 
@@ -2417,14 +2435,11 @@ id:freicoin symbol:frc name:Freicoin
 id:freight-trust-network symbol:edi name:Freight Trust Network 
 id:french-digital-reserve symbol:fdr name:French Digital Reserve 
 id:french-ico-coin symbol:fico name:French ICO Coin 
-id:frens-community symbol:frens name:Frens Community 
 id:frenzy symbol:fzy name:Frenzy 
 id:freq-set-dollar symbol:fsd name:Freq Set Dollar 
 id:fridaybeers symbol:beer name:FridayBeers 
-id:friendcoin007 symbol:fc007 name:Friendcoin007 
 id:friends-with-benefits symbol:fwb name:Friends With Benefits 
 id:friendz symbol:fdz name:Friendz 
-id:frinkcoin symbol:frnk name:Frinkcoin 
 id:frmx-token symbol:frmx name:FRMx Token 
 id:fromm-car symbol:fcr name:Fromm Car 
 id:frontier-token symbol:front name:Frontier 
@@ -2458,7 +2473,6 @@ id:fuupay symbol:fpt name:FUUPAY
 id:fuze-token symbol:fuze name:FUZE Token 
 id:fuzex symbol:fxt name:FuzeX 
 id:fuzzballs symbol:fuzz name:FuzzBalls 
-id:fx-ccoin symbol:fxn name:FX COIN 
 id:fx-coin symbol:fx name:f(x) Coin 
 id:fxpay symbol:fxp name:FXPay 
 id:fyeth-finance symbol:yeth name:Fyeth.finance 
@@ -2469,7 +2483,6 @@ id:gains-v2 symbol:gfarm2 name:Gains V2
 id:gala symbol:gala name:Gala 
 id:galactrum symbol:ore name:Galactrum 
 id:galatasaray-fan-token symbol:gal name:Galatasaray Fan Token 
-id:galaxy-esolutions symbol:ges name:Galaxy eSolutions 
 id:galaxy-network symbol:gnc name:Galaxy Network 
 id:galaxy-pool-coin symbol:gpo name:Galaxy Pool Coin 
 id:galaxy-wallet symbol:gc name:Galaxy Wallet 
@@ -2591,6 +2604,7 @@ id:gobyte symbol:gbx name:GoByte
 id:gochain symbol:go name:GoChain 
 id:godigit symbol:git name:GoDigit 
 id:goforit symbol:goi name:GoForIt Walk&Win 
+id:gogo-finance symbol:gogo name:GOGO Finance 
 id:gokumarket-credit symbol:gmc name:GokuMarket Credit 
 id:gold symbol:gold name:GOLD 
 id:gold-and-gold symbol:gng name:Gold And Gold 
@@ -2600,6 +2614,7 @@ id:goldblocks symbol:gb name:GoldBlocks
 id:gold-cash symbol:gold name:Gold Cash 
 id:goldcoin symbol:glc name:Goldcoin 
 id:gold-coin-reserve symbol:gcr name:Gold Coin Reserve 
+id:golden-bridge-coin symbol:gbc name:Golden Bridge Coin 
 id:golden-goose symbol:gold name:Golden Goose 
 id:golden-ratio-coin symbol:goldr name:Golden Ratio Coin 
 id:golden-ratio-token symbol:grt name:Golden Ratio Token 
@@ -2625,10 +2640,13 @@ id:gonetwork symbol:got name:GoNetwork
 id:goocoin symbol:gooc name:GooCoin 
 id:good-boy-points symbol:gbp name:Good Boy Points 
 id:goosebet-token symbol:gbt name:GooseBet Token 
+id:goose-finance symbol:egg name:Goose Finance 
 id:gossipcoin symbol:goss name:GOSSIP-Coin 
 id:gotogods symbol:ogods name:GOTOGODS 
+id:gourmetgalaxy symbol:gum name:Gourmet Galaxy 
 id:governance-zil symbol:gzil name:governance ZIL 
 id:governor-dao symbol:gdao name:Governor DAO 
+id:govi symbol:govi name:Govi 
 id:gowithmi symbol:gmat name:GoWithMi 
 id:gp-token symbol:xgp name:GP Token 
 id:gpu-coin symbol:gpu name:GPU Coin 
@@ -2670,6 +2688,7 @@ id:guapcoin symbol:guap name:Guapcoin
 id:guardium symbol:guard name:Guard 
 id:guider symbol:gdr name:Guider 
 id:gulden symbol:nlg name:Gulden 
+id:gulf-coin-gold symbol:gcg name:Gulf Coin Gold 
 id:guncoin symbol:gun name:Guncoin 
 id:guns symbol:guns name:GUNS 
 id:gunthy symbol:gunthy name:GUNTHY 
@@ -2694,6 +2713,7 @@ id:happycoin symbol:hpc name:Happycoin
 id:hapy-coin symbol:hapy name:HAPY Coin 
 id:hara-token symbol:hart name:Hara Token 
 id:harcomia symbol:hca name:Harcomia 
+id:hardcore-finance symbol:hcore name:Hardcore Finance 
 id:hard-protocol symbol:HARD name:HARD Protocol 
 id:hardware-chain symbol:hdw name:Hardware Chain 
 id:harmony symbol:one name:Harmony 
@@ -2733,12 +2753,10 @@ id:hedgetrade symbol:hedg name:HedgeTrade
 id:hedpay symbol:hdp.ф name:HEdpAY 
 id:hegic symbol:hegic name:Hegic 
 id:heidi symbol:hdi name:HEIDI 
-id:helbiz symbol:hbz name:HBZ 
 id:helgro symbol:hgro name:Helgro 
 id:helio-power-token symbol:thpt name:HELIO POWER TOKEN 
 id:helios-protocol symbol:hls name:Helios Protocol 
 id:helium symbol:hnt name:Helium 
-id:helium-chain symbol:hlm name:Helium Chain 
 id:helix symbol:hlix name:Helix 
 id:helixnetwork symbol:mhlx name:HelixNetwork 
 id:helleniccoin symbol:hnc name:Hellenic Coin 
@@ -2815,6 +2833,7 @@ id:hotdollars-token symbol:hds name:HotDollars Token
 id:hotnow symbol:hot name:HotNow 
 id:hotpot-base-token symbol:pot name:Hotpot Base Token 
 id:howdoo symbol:udoo name:Hyprr (Howdoo) 
+id:hplus symbol:hplus name:HPLUS 
 id:hrd symbol:hrd name:Hoard Token 
 id:hshare symbol:hc name:HyperCash 
 id:htmlcoin symbol:html name:HTMLCOIN 
@@ -2843,6 +2862,7 @@ id:hybrid-bank-cash symbol:hbc name:Hybrid Bank Cash
 id:hybrix symbol:hy name:Hybrix 
 id:hycon symbol:hyc name:Hycon 
 id:hydra symbol:hydra name:Hydra 
+id:hydradx symbol:xhdx name:HydraDX 
 id:hydro symbol:hydro name:Hydro 
 id:hydrocarbon-8 symbol:hc8 name:HYDROCARBON 8 
 id:hydro-protocol symbol:hot name:Hydro Protocol 
@@ -2882,6 +2902,7 @@ id:idash symbol:idash name:iDASH
 id:idc-token symbol:it name:IDC Token 
 id:ideachain symbol:ich name:IdeaChain 
 id:idealcash symbol:deal name:IdealCash 
+id:ideaology symbol:idea name:Ideaology 
 id:idefi symbol:idefi name:iDeFi 
 id:idena symbol:iDNA name:Idena 
 id:idex-membership symbol:idxm name:IDEX Membership 
@@ -2889,13 +2910,14 @@ id:idextools symbol:dext name:DexTools
 id:idk symbol:idk name:IDK 
 id:idle symbol:idle name:IDLE 
 id:idle-dai-risk-adjusted symbol:idleDAISafe name:IdleDAI (Risk Adjusted) 
+id:idle-dai-yield symbol:idleDAIYield name:IdleDAI (Best Yield) 
 id:idle-susd-yield symbol:idleSUSDYield name:IdleSUSD (Yield) 
-id:idle-tusd-yield symbol:idleTUSDYield name:IdleTUSD (Yield) 
+id:idle-tusd-yield symbol:idleTUSDYield name:IdleTUSD (Best Yield) 
 id:idle-usdc-risk-adjusted symbol:idleUSDCSafe name:IdleUSDC (Risk Adjusted) 
 id:idle-usdc-yield symbol:idleUSDCYield name:IdleUSDC (Yield) 
 id:idle-usdt-risk-adjusted symbol:IdleUSDTSafe name:IdleUSDT (Risk Adjusted) 
 id:idle-usdt-yield symbol:idleUSDTYield name:IdleUSDT (Yield) 
-id:idle-wbtc-yield symbol:idleWBTCYield name:IdleWBTC (Yield) 
+id:idle-wbtc-yield symbol:idleWBTCYield name:IdleWBTC (Best Yield) 
 id:idl-token symbol:idl name:IDL Token 
 id:idoneus-token symbol:idon name:Idoneus Token 
 id:ieos symbol:ieos name:iEOS 
@@ -2905,6 +2927,7 @@ id:iexec-rlc symbol:rlc name:iExec RLC
 id:ifx24 symbol:ifx24 name:IFX24 
 id:ig-gold symbol:igg name:IG Gold 
 id:ignis symbol:ignis name:Ignis 
+id:ignite symbol:ign name:Ignite 
 id:ignition symbol:ic name:Ignition 
 id:igtoken symbol:ig name:IGToken 
 id:iht-real-estate-protocol symbol:iht name:IHT Real Estate Protocol 
@@ -2915,6 +2938,7 @@ id:imagecoin symbol:img name:ImageCoin
 id:imperial symbol:units name:Imperial 
 id:impleum symbol:impl name:Impleum 
 id:improved-bitcoin symbol:iBTC name:Improved Bitcoin 
+id:impulse-by-fdr symbol:impulse name:Impulse By FDR 
 id:ims-wallet symbol:ims name:IMSWallet 
 id:imusd symbol:imusd name:imUSD 
 id:imusify symbol:imu name:imusify 
@@ -2986,7 +3010,6 @@ id:interop symbol:trop name:Interop
 id:intervalue symbol:inve name:InterValue 
 id:intexcoin symbol:intx name:INTEXCOIN 
 id:intucoin symbol:intu name:INTUCoin 
-id:inverse-eth-29-day-ma-crossover-set symbol:ieth20smaco name:Inverse ETH 20 Day MA Crossover Set 
 id:inverse-eth-50-day-ma-crossover-set symbol:ieth50smaco name:Inverse ETH 50 Day MA Crossover Set 
 id:investcoin symbol:invc name:Investcoin 
 id:investdigital symbol:idt name:InvestDigital 
@@ -3019,6 +3042,7 @@ id:isalcoin symbol:isal name:Isalcoin
 id:ishop-plus symbol:isp name:ISHOP PLUS 
 id:ishop-token symbol:ist name:iShop Token 
 id:isiklar-coin symbol:isikc name:Isiklar Coin 
+id:istanbul-basaksehir-fan-token symbol:ibfk name:İstanbul Başakşehir Fan Token 
 id:istardust symbol:isdt name:Istardust 
 id:italian-lira symbol:itl name:Italian Lira 
 id:italo symbol:xta name:Italo 
@@ -3045,6 +3069,7 @@ id:jade-currency symbol:jade name:Jade Currency
 id:japan-excitement-coin symbol:jpx name:Japan Excitement Coin 
 id:jarvis symbol:jar name:Jarvis+ 
 id:jarvis-reward-token symbol:jrt name:Jarvis Reward Token 
+id:jasmycoin symbol:jasmy name:JasmyCoin 
 id:jasper-coin symbol:jac name:Jasper Coin 
 id:javascript-token symbol:js name:JavaScript Token 
 id:jboxcoin symbol:jbx name:JBOX 
@@ -3083,6 +3108,7 @@ id:juggernaut symbol:jgn name:Juggernaut
 id:juiice symbol:jui name:JUIICE 
 id:jul symbol:jul name:JustLiquidity 
 id:julien symbol:julien name:JULIEN 
+id:julswap symbol:juld name:JulSwap 
 id:jumpcoin symbol:jump name:Jumpcoin 
 id:junca-cash symbol:jcc name:Junca cash 
 id:junsonmingchancoin symbol:jmc name:Junsonmingchancoin 
@@ -3105,6 +3131,7 @@ id:kalkulus symbol:klks name:Kalkulus
 id:kambria symbol:kat name:Kambria 
 id:kan symbol:kan name:BitKan 
 id:kanadecoin symbol:kndc name:KanadeCoin 
+id:kansas-city-chiefs-win-super-bowl symbol:chiefs name:Kansas City Chiefs Win Super Bowl 
 id:kanva symbol:knv name:Kanva 
 id:kapex symbol:kpx name:KAPEX 
 id:kapu symbol:kapu name:Kapu 
@@ -3191,7 +3218,6 @@ id:korbot-platform symbol:kbot name:Korbot
 id:koto symbol:koto name:Koto 
 id:koumei symbol:kmc name:Koumei 
 id:kper-network symbol:kper name:Kper Network 
-id:kratscoin symbol:ktc name:Kratscoin 
 id:kreds symbol:kreds name:Kreds 
 id:krios symbol:GIG name:Krios 
 id:kronn symbol:krex name:Kronn 
@@ -3201,8 +3227,8 @@ id:kryptokrona symbol:xkr name:Kryptokrona
 id:krypton-token symbol:kgc name:Krypton Galaxy Coin 
 id:kryptoro symbol:kto name:Kryptoro 
 id:kstarcoin symbol:ksc name:KStarCoin 
+id:k-tune symbol:ktt name:K-Tune 
 id:kuaitoken symbol:kt name:Kuai Token 
-id:kuberbitcoin symbol:KBI name:Kuberbitcoin 
 id:kublaicoin symbol:kub name:Kublaicoin 
 id:kubocoin symbol:kubo name:KuboCoin 
 id:kucoin-shares symbol:kcs name:KuCoin Token 
@@ -3220,7 +3246,6 @@ id:kyber-network symbol:knc name:Kyber Network
 id:kyc-crypto symbol:mima name:KYC.Crypto 
 id:kysc-token symbol:kysc name:KYSC Token 
 id:kzcash symbol:kzc name:Kzcash 
-id:la-devise-technologies symbol:ldc name:La Devise Technologies 
 id:ladz symbol:ladz name:LADZ 
 id:lambda symbol:lamb name:Lambda 
 id:lamden symbol:tau name:Lamden 
@@ -3242,6 +3267,7 @@ id:lcg symbol:lcg name:LCG
 id:lcx symbol:lcx name:LCX 
 id:lead-token symbol:lead name:Lead Token 
 id:leafcoin symbol:leaf name:Leafcoin 
+id:leasehold symbol:lsh name:Leasehold 
 id:legal-block symbol:lbk name:Legal Block 
 id:legends-room symbol:more name:Legends Room 
 id:legolas-exchange symbol:lgo name:LGO Token 
@@ -3249,6 +3275,7 @@ id:lemochain symbol:lemo name:LemoChain
 id:lemon-bet symbol:lbet name:Lemon Bet 
 id:lendchain symbol:lv name:LendChain 
 id:lendefi symbol:LDFI name:LenDeFi Token 
+id:lendhub symbol:lhb name:Lendhub 
 id:lendingblock symbol:lnd name:Lendingblock 
 id:lendroid-support-token symbol:lst name:Lendroid Support Token 
 id:leocoin symbol:lc4 name:LEOcoin 
@@ -3334,6 +3361,7 @@ id:litecoinz symbol:ltz name:LitecoinZ
 id:litedoge symbol:ldoge name:LiteDoge 
 id:litegold symbol:ltg name:LiteGold 
 id:litenero symbol:ltnx name:Litenero 
+id:litentry symbol:lit name:Litentry 
 id:litex symbol:lxt name:LITEX 
 id:lition symbol:lit name:Lition 
 id:litonium symbol:lit name:LITonium 
@@ -3362,16 +3390,14 @@ id:loon-network symbol:loon name:Loon Network
 id:loopring symbol:lrc name:Loopring 
 id:lori symbol:lori name:LORI 
 id:lotoblock symbol:loto name:Lotoblock 
+id:lotto symbol:lotto name:Lotto 
 id:lottonation symbol:lnt name:Lottonation 
 id:lovechain symbol:lov name:LoveChain 
 id:love-coin symbol:love name:LOVE Coin 
 id:lovehearts symbol:lvh name:LoveHearts 
 id:lp-3pool-curve symbol:3crv name:LP 3pool Curve 
-id:lp-bcurve symbol:bCurve name:LP-bCurve 
 id:l-pesa symbol:lpk name:Kripton 
-id:lp-paxcurve symbol:paxCurve name:LP-paxCurve 
 id:lp-renbtc-curve symbol:renbtcCurve name:LP renBTC Curve 
-id:lp-sbtc-curve symbol:sbtcCurve name:LP sBTC Curve 
 id:lp-scurve symbol:sCurve name:LP-sCurve 
 id:ltcp symbol:ltcp name:LTCP 
 id:lto-network symbol:lto name:LTO Network 
@@ -3424,7 +3450,7 @@ id:magnachain symbol:mgc name:Magnachain
 id:mahadao symbol:maha name:MahaDAO 
 id:maidsafecoin symbol:maid name:MaidSafeCoin 
 id:maincoin symbol:mnc name:MainCoin 
-id:mainframe symbol:mft name:Mainframe 
+id:mainframe symbol:mft name:Hifi Finance 
 id:mainstream-for-the-underground symbol:mftu name:Mainstream For The Underground 
 id:majatoken symbol:mja name:Majatoken 
 id:makcoin symbol:mak name:MAKCOIN 
@@ -3449,6 +3475,7 @@ id:mapcoin symbol:mapc name:MapCoin
 id:maps symbol:maps name:MAPS 
 id:marblecoin symbol:mbc name:Marblecoin 
 id:marcopolo symbol:map name:MAP Protocol 
+id:marginswap symbol:mfi name:Marginswap 
 id:margix symbol:mgx name:MargiX 
 id:mario-cash-jan-2021 symbol:mario-cash-jan-2021 name:Mario Cash Synthetic Token Expiring 15 January 2021 
 id:markaccy symbol:MKCY name:Markaccy 
@@ -3476,7 +3503,7 @@ id:master-usd symbol:musd name:MASTER USD
 id:masterwin symbol:mw name:MasterWin 
 id:matchpool symbol:gup name:Guppy 
 id:math symbol:math name:MATH 
-id:matic-network symbol:matic name:Matic Network 
+id:matic-network symbol:matic name:Polygon 
 id:matrexcoin symbol:mac name:Matrexcoin 
 id:matrix-ai-network symbol:man name:Matrix AI Network 
 id:matryx symbol:mtx name:MATRYX 
@@ -3496,6 +3523,7 @@ id:mcdex symbol:mcb name:MCDEX
 id:mchain symbol:mar name:Mchain 
 id:m-chain symbol:m name:M Chain 
 id:mci-coin symbol:mci name:MCI Coin 
+id:mcobit symbol:mct name:Mcobit 
 id:mdex symbol:mdx name:Mdex 
 id:mdsquare symbol:tmed name:MDsquare 
 id:mdtoken symbol:mdtk name:MDtoken 
@@ -3538,6 +3566,7 @@ id:merge symbol:merge name:Merge
 id:mergecoin symbol:mgc name:MergeCoin 
 id:meridian-network symbol:lock name:Meridian Network 
 id:meritcoins symbol:mrc name:Meritcoins 
+id:meroechain symbol:mrc name:MeroeChain 
 id:mesefa symbol:sefa name:MESEFA 
 id:meshbox symbol:mesh name:MeshBox 
 id:messengerbank symbol:mbit name:MessengerBank 
@@ -3554,6 +3583,7 @@ id:metanoia symbol:noia name:METANOIA
 id:metaprediction symbol:metp name:Metaprediction 
 id:metaverse-dualchain-network-architecture symbol:dna name:Metaverse DNA 
 id:metaverse-etp symbol:etp name:Metaverse ETP 
+id:metawhale-btc symbol:mwbtc name:MetaWhale BTC 
 id:metawhale-gold symbol:MWG name:Metawhale Gold 
 id:meter symbol:mtrg name:Meter Governance 
 id:meter-governance-mapped-by-meter-io symbol:eMTRG name:Meter Governance mapped by Meter.io 
@@ -3577,6 +3607,7 @@ id:micromines symbol:micro name:Micromines
 id:micromoney symbol:amm name:MicroMoney 
 id:midas symbol:midas name:Midas 
 id:midas-cash symbol:mcash name:Mcashchain 
+id:midas-dollar symbol:mdo name:Midas Dollar 
 id:midas-protocol symbol:mas name:Midas Protocol 
 id:migranet symbol:mig name:Migranet 
 id:miks-coin symbol:miks name:MIKS COIN 
@@ -3631,7 +3662,6 @@ id:mmocoin symbol:mmo name:MMOCoin
 id:mm-token symbol:mm name:MM Token 
 id:mnmcoin symbol:mnmc name:MNMCoin 
 id:mnpcoin symbol:mnp name:MNPCoin 
-id:mnscoin symbol:mns name:MNSCoin 
 id:moac symbol:moac name:MOAC 
 id:mobiecoin symbol:mbx name:MobieCoin 
 id:mobilecoin symbol:mob name:MobileCoin 
@@ -3684,6 +3714,8 @@ id:monkey-coin symbol:mc name:Monkey Coin
 id:monkey-king-token symbol:mkt name:Monkey King Token 
 id:monkey-project symbol:monk name:Monkey Project 
 id:monnos symbol:mns name:Monnos 
+id:monster-cash-share symbol:mss name:Monster Slayer Share 
+id:monster-slayer-cash symbol:msc name:Monster Slayer Cash 
 id:moon symbol:moon name:r/CryptoCurrency Moons 
 id:moonbase symbol:mbbased name:Moonbase 
 id:mooncoin symbol:moon name:Mooncoin 
@@ -3714,8 +3746,10 @@ id:mousecoin symbol:mic3 name:MOUSECOIN
 id:moviebloc symbol:mbl name:MovieBloc 
 id:mox symbol:mox name:MoX 
 id:mozox symbol:mozox name:MozoX 
+id:mp3 symbol:mp3 name:MP3 
 id:mrv symbol:mrv name:MRV 
 id:msn symbol:msn name:MSN 
+id:mstable-btc symbol:mbtc name:mStable BTC 
 id:mtblock symbol:mts name:MtBlock 
 id:mti-finance symbol:mti name:MTI Finance 
 id:mt-pelerin-shares symbol:mps name:Mt Pelerin Shares 
@@ -3742,6 +3776,7 @@ id:mycro-ico symbol:myo name:Mycro
 id:my-crypto-play symbol:mcp name:My Crypto Play 
 id:myfichain symbol:myfi name:MyFiChain 
 id:mykey symbol:key name:MYKEY 
+id:mykonos-coin symbol:myk name:Mykonos Coin 
 id:mymn symbol:mymn name:MyMN 
 id:mynt symbol:mynt name:Mynt 
 id:myriadcoin symbol:xmy name:Myriad 
@@ -3756,9 +3791,11 @@ id:myx-network symbol:myx name:MYX Network
 id:n3rd-finance symbol:N3RDz name:N3RD Finance 
 id:nacho-coin symbol:nacho name:Nacho Coin 
 id:naga symbol:ngc name:NAGA 
+id:nagaswap symbol:bnw name:NagaSwap 
 id:nahmii symbol:nii name:Nahmii 
 id:nairax-ico symbol:nirx name:NairaX 
 id:naka-bodhi-token symbol:nbot name:Naka Bodhi Token 
+id:name-changing-token symbol:nct name:Name Changing Token 
 id:namecoin symbol:nmc name:Namecoin 
 id:nami-corporation-token symbol:nami name:Nami Corporation Token 
 id:nami-trade symbol:nac name:Nami.Trade 
@@ -3851,6 +3888,7 @@ id:nexxo symbol:nexxo name:Nexxo
 id:nftlootbox symbol:loot name:NFTLootBox 
 id:nft-protocol symbol:nft name:NFT Protocol 
 id:nftx symbol:nftx name:NFTX 
+id:nftx-hashmasks-index symbol:mask name:NFTX Hashmasks Index 
 id:nfx-coin symbol:nfxc name:NFX Coin 
 id:ngin symbol:ng name:Ngin 
 id:ngot symbol:ngot name:ngot 
@@ -3865,7 +3903,6 @@ id:nioshares symbol:nio name:NioShares
 id:nirvana symbol:vana name:Nirvana 
 id:nitro symbol:nox name:NITRO 
 id:nitro-platform-token symbol:ntrt name:Nitro Platform Token 
-id:nium symbol:niumc name:Nium 
 id:nix-bridge-token symbol:nbt name:NIX Bridge Token 
 id:nix-platform symbol:nix name:NIX 
 id:nkcl symbol:nkcl name:NKCL 
@@ -3898,6 +3935,7 @@ id:no-trump-augur-prediction-token symbol:ntrump name:NO Trump Augur Prediction 
 id:nova symbol:nova name:NOVA 
 id:novacoin symbol:nvc name:Novacoin 
 id:novadefi symbol:nmt name:NovaDeFi 
+id:novara-calcio-fan-token symbol:nov name:Novara Calcio Fan Token 
 id:novem-gold-token symbol:nnn name:Novem Gold Token 
 id:novo symbol:novo name:Novo 
 id:npccoin symbol:npc name:NPCcoin 
@@ -3955,6 +3993,7 @@ id:odem symbol:ode name:ODEM
 id:odin-token symbol:odin name:OdinBrowser 
 id:odinycoin symbol:odc name:Odinycoin 
 id:oduwa-coin symbol:owc name:Oduwa Coin 
+id:oduwausd symbol:owdt name:OduwaUSD 
 id:odyssey symbol:ocn name:Odyssey 
 id:offshift symbol:xft name:Offshift 
 id:ofin-token symbol:on name:OFIN TOKEN 
@@ -3978,6 +4017,7 @@ id:omega-protocol-money symbol:opm name:Omega Protocol Money
 id:omisego symbol:omg name:OMG Network 
 id:omni symbol:omni name:Omni 
 id:omnitude symbol:ecom name:Omnitude 
+id:omniunit symbol:omniunit name:Omniunit 
 id:omotenashicoin symbol:mtns name:OmotenashiCoin 
 id:onbuff symbol:onit name:ONBUFF 
 id:one symbol:one name:One 
@@ -4014,6 +4054,7 @@ id:open-platform symbol:open name:Open Platform
 id:open-predict-token symbol:opt name:OpenPredict Token 
 id:open-source-chain symbol:osch name:Open Source Chain 
 id:opium symbol:opium name:Opium 
+id:option-room symbol:room name:OptionRoom 
 id:optitoken symbol:opti name:Optitoken 
 id:opus symbol:opt name:Opus 
 id:oraclechain symbol:oct name:OracleChain 
@@ -4051,6 +4092,7 @@ id:osmiumcoin symbol:os76 name:OsmiumCoin
 id:otcbtc-token symbol:otb name:OTCBTC Token 
 id:otocash symbol:oto name:OTOCASH 
 id:ouroboros symbol:ouro name:Ouroboros 
+id:our-pay symbol:our name:Our Pay 
 id:ovcode symbol:ovc name:OVCODE 
 id:over-powered-coin symbol:opcx name:Over Powered Coin 
 id:ovr symbol:ovr name:Ovr 
@@ -4075,7 +4117,7 @@ id:pamp-network symbol:pamp name:Pamp Network
 id:pancake-bunny symbol:bunny name:Pancake Bunny 
 id:pancakeswap-token symbol:cake name:PancakeSwap 
 id:pandacoin symbol:pnd name:Pandacoin 
-id:panda-yield symbol:bamboo name:Panda Yield 
+id:panda-yield symbol:bboo name:Panda Yield 
 id:pandroyty-token symbol:pdry name:Pandroyty Token 
 id:pangea symbol:xpat name:Pangea Arbitration Token (Bitnation) 
 id:pantheon-x symbol:xpn name:PANTHEON X 
@@ -4124,10 +4166,12 @@ id:payship symbol:pshp name:Payship
 id:paytomat symbol:pti name:Paytomat 
 id:payusd symbol:pusd name:PayUSD 
 id:payyoda symbol:yot name:PayYoda 
+id:pazzy symbol:pazzy name:Pazzy 
 id:pbs-chain symbol:pbs name:PBS Chain 
 id:pbtc35a symbol:pbtc35a name:pBTC35A 
 id:pchain symbol:pi name:PCHAIN 
 id:pdx symbol:pdx name:PDX 
+id:peanut symbol:nux name:Peanut 
 id:pearl-finance symbol:pearl name:Pearl Finance 
 id:peculium symbol:pcl name:Peculium 
 id:peepcoin symbol:pcn name:Peepcoin 
@@ -4160,6 +4204,7 @@ id:persona-protocol symbol:qpsn name:Persona Protocol
 id:perth-mint-gold-token symbol:pmgt name:Perth Mint Gold Token 
 id:pesetacoin symbol:ptc name:Pesetacoin 
 id:pesobit symbol:psb name:Pesobit 
+id:p-ethereum symbol:peth name:P-Ethereum 
 id:petrachor symbol:pta name:Petrachor 
 id:petrodollar symbol:xpd name:PetroDollar 
 id:petroleum symbol:oil name:PETROLEUM 
@@ -4168,6 +4213,7 @@ id:pha symbol:pha name:Phala Network
 id:phantasma symbol:soul name:Phantasma 
 id:phantasma-energy symbol:kcal name:Phantasma Energy 
 id:phantom symbol:xph name:PHANTOM 
+id:phantom-token symbol:phtf name:Phantom Token 
 id:phantomx symbol:pnx name:Phantomx 
 id:philips-pay-coin symbol:ppc name:PHILLIPS PAY COIN 
 id:phillionex symbol:phn name:Phillionex 
@@ -4179,6 +4225,7 @@ id:phoenixcoin symbol:pxc name:Phoenixcoin
 id:phoenixdao symbol:phnx name:PhoenixDAO 
 id:phoneum symbol:pht name:Phoneum 
 id:phore symbol:phr name:Phore 
+id:phoswap symbol:pho name:Phoswap 
 id:photon symbol:pho name:Photon 
 id:piasa symbol:piasa name:PIASA 
 id:pibble symbol:pib name:Pibble 
@@ -4193,7 +4240,6 @@ id:piedao-defi-small-cap symbol:DEFI+S name:PieDAO DEFI Small Cap
 id:piedao-dough-v2 symbol:dough name:PieDAO DOUGH v2 
 id:piedao-usd symbol:usd++ name:PieDAO USD++ 
 id:piedao-yearn-ecosystem-pie symbol:ypie name:PieDAO Yearn Ecosystem Pie 
-id:piedpipernetwork symbol:ppn name:PiedPiperNetwork 
 id:piegon-gold symbol:piegon name:PIEGON GOLD 
 id:pigeoncoin symbol:pgn name:Pigeoncoin 
 id:pigx symbol:pigx name:PIGX 
@@ -4222,6 +4268,7 @@ id:plasma-finance symbol:ppay name:Plasma Finance
 id:platincoin symbol:plc name:PlatinCoin 
 id:platoncoin symbol:pltc name:PlatonCoin 
 id:play2live symbol:luc name:Level-Up Coin 
+id:playandlike symbol:pal name:PlayAndLike 
 id:playchip symbol:pla name:PlayChip 
 id:playcoin symbol:plx name:PlayX 
 id:playervsplayercoin symbol:pvp name:PlayerVsPlayerCoin 
@@ -4242,12 +4289,12 @@ id:pluto symbol:plut name:Pluto
 id:pluton symbol:plu name:Pluton 
 id:plutus-defi symbol:plt name:Add.xyz 
 id:pnetwork symbol:pnt name:pNetwork 
-id:pngcoin symbol:png name:Pngcoin 
 id:poa-network symbol:poa name:POA Network 
 id:poc-blockchain symbol:poc name:POC Blockchain 
 id:poc-chain symbol:pocc name:POC Chain 
 id:pocket-arena symbol:poc name:Pocket Arena 
 id:pocket-node symbol:node name:Pocket Node 
+id:podo-point symbol:pod name:Podo Point 
 id:poet symbol:poe name:Po.et 
 id:pofid-dao symbol:pfid name:Pofid Dao 
 id:point symbol:point name:Point 
@@ -4258,6 +4305,7 @@ id:polar-chain symbol:pola name:Polar Chain
 id:polaris-share symbol:pola name:Polaris Share 
 id:polcoin symbol:plc name:Polcoin 
 id:polis symbol:polis name:Polis 
+id:polkabase symbol:pbase name:Polkabase 
 id:polkabridge symbol:pbr name:PolkaBridge 
 id:polkacover symbol:cvr name:Polkacover 
 id:polkadot symbol:dot name:Polkadot 
@@ -4301,6 +4349,7 @@ id:predator-coin symbol:prd name:Predator Coin
 id:predict symbol:pt name:Predict 
 id:predictz symbol:prdz name:Predictz 
 id:predix-network symbol:prdx name:Predix Network 
+id:premia symbol:premia name:Premia 
 id:presearch symbol:pre name:Presearch 
 id:president-trump symbol:pres name:President Trump 
 id:pressone symbol:prs name:PressOne 
@@ -4372,7 +4421,6 @@ id:pyrexcoin symbol:gpyx name:GoldenPyrex
 id:pyrk symbol:pyrk name:Pyrk 
 id:pyro-network symbol:pyro name:PYRO Network 
 id:q8e20-token symbol:q8e20 name:Q8E20 Token 
-id:q8e-coin symbol:q8e name:Q8E Coin 
 id:qanplatform symbol:qark name:QANplatform 
 id:qash symbol:qash name:QASH 
 id:qbao symbol:qbt name:Qbao 
@@ -4413,6 +4461,7 @@ id:qubicles symbol:qbe name:Qubicles
 id:qubitica symbol:qbit name:Qubitica 
 id:quebecoin symbol:qbc name:Quebecoin 
 id:queenbee symbol:qbz name:QUEENBEE 
+id:quick symbol:quick name:Quickswap 
 id:quickx-protocol symbol:qcx name:QuickX Protocol 
 id:quinads symbol:quin name:QUINADS 
 id:quish-coin symbol:qtv name:QUISH COIN 
@@ -4460,6 +4509,7 @@ id:ravencoin-classic symbol:rvc name:Ravencoin Classic
 id:raven-dark symbol:xrd name:Raven Dark 
 id:raven-protocol symbol:raven name:Raven Protocol 
 id:rawcoin symbol:xrc name:Rawcoin 
+id:razor-network symbol:razor name:Razor Network 
 id:rbase-finance symbol:rbase name:rbase.finance 
 id:rccc symbol:rccc name:RCCC 
 id:rchain symbol:REV name:RChain 
@@ -4511,7 +4561,6 @@ id:release-ico-project symbol:rel name:RELEASE
 id:relevant symbol:rel name:Relevant 
 id:relex symbol:rlx name:Relex 
 id:relianz symbol:rlz name:Relianz 
-id:reload symbol:rld name:Reload 
 id:remme symbol:rem name:Remme 
 id:renbch symbol:renbch name:renBCH 
 id:renbtc symbol:renbtc name:renBTC 
@@ -4540,6 +4589,7 @@ id:rfbtc symbol:rfbtc name:RFbtc
 id:rfyield-finance symbol:rfy name:RFYield Finance 
 id:rheaprotocol symbol:rhea name:Rhea Protocol 
 id:rhegic symbol:rhegic name:rHegic 
+id:rhegic2 symbol:rhegic2 name:rHEGIC2 
 id:rich-lab-token symbol:rle name:Rich Lab Token 
 id:richway-finance symbol:rich name:Richway.Finance 
 id:ride-my-car symbol:ride name:Ride My Car 
@@ -4556,6 +4606,7 @@ id:ripple symbol:xrp name:XRP
 id:ripple-alpha symbol:xla name:Ripple Alpha 
 id:rise symbol:rise name:Rise 
 id:risecointoken symbol:rsct name:RiseCoin Token 
+id:rise-protocol symbol:rise name:Rise Protocol 
 id:rito symbol:rito name:Rito 
 id:ri-token symbol:ri name:RI Token 
 id:rivemont symbol:rvmt name:RiveMont 
@@ -4574,7 +4625,7 @@ id:robonomics-network symbol:xrt name:Robonomics Network
 id:robonomics-web-services symbol:rws name:Robonomics Web Services 
 id:robot symbol:robot name:Robot 
 id:robotina symbol:rox name:Robotina 
-id:robotradeonline symbol:rto name:RoboTradeOnline 
+id:rock3t symbol:r3t name:ROCK3T 
 id:rocket-fund symbol:rkt name:Rocket Fund 
 id:rocketgame symbol:rocket name:RocketGame 
 id:rocket-pool symbol:rpl name:Rocket Pool 
@@ -4606,6 +4657,7 @@ id:rublix symbol:rblx name:Rublix
 id:rubycoin symbol:rby name:Rubycoin 
 id:ruff symbol:ruff name:Ruff 
 id:rug symbol:rug name:Rug 
+id:rug-proof symbol:rpt name:Rug Proof 
 id:rugz symbol:rugz name:pulltherug.finance 
 id:ruletka symbol:rtk name:Ruletka 
 id:runebase symbol:runes name:Runebase 
@@ -4619,20 +4671,21 @@ id:rutheneum symbol:rth name:Rutheneum
 id:rym symbol:rym name:RYM 
 id:ryo symbol:ryo name:Ryo Currency 
 id:s4fe symbol:s4f name:S4FE 
+id:saave symbol:saave name:sAAVE 
 id:sada symbol:sada name:sADA 
 id:safari symbol:sfr name:Safari 
 id:safe2 symbol:safe2 name:SAFE2 
 id:safecapital symbol:scap name:SafeCapital 
 id:safe-coin symbol:safe name:Safe 
 id:safe-coin-2 symbol:safe name:SafeCoin 
-id:safe-deal symbol:sfd name:SAFE DEAL 
+id:safe-deal symbol:sfd name:SafeDeal 
 id:safe-haven symbol:sha name:Safe Haven 
 id:safeinsure symbol:sins name:SafeInsure 
+id:safepal symbol:sfp name:SafePal 
 id:safe-seafood-coin symbol:ssf name:Safe SeaFood Coin 
 id:saffron-finance symbol:sfi name:saffron.finance 
 id:saga symbol:sgr name:Sogur 
 id:sagacoin symbol:saga name:DarkSaga 
-id:sagecity symbol:sage name:SageCity 
 id:sai symbol:sai name:Sai 
 id:saint-fame symbol:fame name:SAINT FAME: Genesis Shirt 
 id:sake-token symbol:sake name:SakeToken 
@@ -4679,6 +4732,7 @@ id:scex symbol:scex name:sCEX
 id:schain-wallet symbol:scha name:Schain Wallet 
 id:schillingcoin symbol:sch name:Schilling-Coin 
 id:science_chain symbol:scc name:Science Chain 
+id:scifi-finance symbol:scifi name:Scifi.Finance 
 id:scolcoin symbol:scol name:Scolcoin 
 id:scopecoin symbol:xscp name:ScopeCoin 
 id:score-milk symbol:milk name:Score Milk 
@@ -4688,7 +4742,6 @@ id:scriv symbol:scriv name:SCRIV
 id:scroll-token symbol:xd name:Data Transaction Token 
 id:scry-info symbol:ddd name:Scry.info 
 id:scrypta symbol:lyra name:Scrypta 
-id:sct-token symbol:sct name:SCT Token 
 id:sdash symbol:sdash name:sDASH 
 id:sdefi symbol:sdefi name:sDEFI 
 id:sdusd symbol:sdusd name:SDUSD 
@@ -4751,6 +4804,7 @@ id:shard symbol:shard name:Shard Coin
 id:sharder-protocol symbol:ss name:Sharder protocol 
 id:shardus symbol:ult name:Shardus 
 id:shareat symbol:xat name:ShareAt 
+id:sharedstake-governance-token symbol:sgt name:SharedStake Governance Token 
 id:sharering symbol:shr name:ShareToken 
 id:sharkcoin symbol:skn name:Sharkcoin 
 id:sharkyield symbol:shark name:SharkYield 
@@ -4758,6 +4812,7 @@ id:sharpay symbol:s name:Sharpay
 id:sheng symbol:sheng name:SHENG 
 id:shiba-inu symbol:shib name:Shiba Inu 
 id:shield symbol:xsh name:SHIELD 
+id:shield-protocol symbol:shield name:Shield Protocol 
 id:shift symbol:shift name:Shift 
 id:shill symbol:posh name:Shill 
 id:shilling symbol:sh name:Shilling 
@@ -4807,6 +4862,7 @@ id:singulardtv symbol:sngls name:SingularDTV
 id:singularitynet symbol:agi name:SingularityNET 
 id:singular-j symbol:sngj name:Singular J 
 id:sinoc symbol:sinoc name:SINOC 
+id:sint-truidense-voetbalvereniging symbol:stv name:Sint-Truidense Voetbalvereniging Fan Token 
 id:sirin-labs-token symbol:srn name:Sirin Labs Token 
 id:sixeleven symbol:611 name:SixEleven 
 id:six-network symbol:six name:SIX Network 
@@ -4816,6 +4872,7 @@ id:skillchain symbol:ski name:Skillchain
 id:skinchain symbol:skc name:SKINCHAIN 
 id:skincoin symbol:skin name:SkinCoin 
 id:skin-rich symbol:skin name:SKIN RICH 
+id:sklay symbol:sklay name:sKLAY 
 id:skraps symbol:skrp name:Skraps 
 id:skrumble-network symbol:skm name:Skrumble Network 
 id:skull symbol:skull name:Skull 
@@ -4833,7 +4890,6 @@ id:sltc symbol:sltc name:sLTC
 id:small-love-potion symbol:slp name:Small Love Potion 
 id:smart-application-chain symbol:sac name:Smart Application Coin 
 id:smartcash symbol:smart name:SmartCash 
-id:smartchain-protocol symbol:xsc name:SmartChain Protocol 
 id:smartcoin symbol:smc name:Smartcoin 
 id:smartcredit-token symbol:smartcredit name:SmartCredit Token 
 id:smart-dollar symbol:sd name:Smart Dollar 
@@ -4856,6 +4912,7 @@ id:snowball symbol:snbl name:Snowball
 id:snowblossom symbol:snow name:SnowBlossom 
 id:snowgem symbol:tent name:TENT 
 id:snowswap symbol:SNOW name:Snowswap 
+id:soak-token symbol:soak name:Soak Token 
 id:soar symbol:skym name:SkyMap 
 id:soar-2 symbol:soar name:Soar 
 id:social-club symbol:rock name:Social Club 
@@ -4900,6 +4957,7 @@ id:sophon-capital-token symbol:sait name:Sophon Capital Token
 id:sora symbol:xor name:Sora 
 id:sorachancoin symbol:sora name:SorachanCoin 
 id:sora-validator-token symbol:val name:Sora Validator Token 
+id:soteria symbol:wsote name:Soteria 
 id:soul-token symbol:soul name:ChainZ Arena 
 id:sound-blockchain-protocol symbol:Berry name:Berry 
 id:southxchange-coin symbol:sxcc name:SouthXchange Coin 
@@ -4907,6 +4965,7 @@ id:sov symbol:sov name:SOV
 id:soverain symbol:sove name:Soverain 
 id:sovereign-coin symbol:sov name:Sovereign Coin 
 id:sovranocoin symbol:svr name:SovranoCoin 
+id:sowing-network symbol:zseed name:Sowing.Network 
 id:spacechain symbol:spc name:SpaceChain 
 id:spacechain-erc-20 symbol:spc name:SpaceChain (ERC-20) 
 id:spacecoin symbol:space name:Spacecoin 
@@ -4947,7 +5006,6 @@ id:spindle symbol:spd name:SPINDLE
 id:spin-protocol symbol:spin name:SPIN Protocol 
 id:spin-token symbol:spin name:SPIN Token 
 id:spock symbol:spok name:Spock 
-id:spokkz symbol:spkz name:SPOKKZ 
 id:spoklottery symbol:spkl name:SpokLottery 
 id:sponb symbol:spo name:SPONB 
 id:sponge symbol:spg name:Sponge 
@@ -4963,7 +5021,6 @@ id:sprint-coin symbol:sprx name:Sprint Coin
 id:spritzcoin symbol:sprtz name:SpritzCoin 
 id:sprouts symbol:sprts name:Sprouts 
 id:sproutsextreme symbol:spex name:SproutsExtreme 
-id:spyce symbol:spyce name:SPYCE 
 id:squirrel-finance symbol:nuts name:Squirrel Finance 
 id:srcoin symbol:srh name:SRH 
 id:sss-finance symbol:SSS name:SSS Finance 
@@ -4979,6 +5036,7 @@ id:stakecube symbol:scc name:Stakecube
 id:stake-dao symbol:sdt name:Stake DAO 
 id:staked-ether symbol:steth name:Lido Staked Ether 
 id:stakedxem symbol:stxem name:stakedXEM 
+id:staked-yaxis symbol:syax name:Staked yAxis 
 id:stakehound symbol:stfiro name:StakedFIRO 
 id:stakehound-staked-ether symbol:steth name:StakeHound Staked Ether 
 id:stakenet symbol:xsn name:Stakenet 
@@ -5048,6 +5106,7 @@ id:stronghands symbol:shnd name:StrongHands
 id:stronghands-masternode symbol:shmn name:StrongHands Masternode 
 id:stronghold symbol:strng name:StrongHold 
 id:stronghold-token symbol:shx name:Stronghold Token 
+id:strudel-finance symbol:trdl name:Strudel Finance 
 id:student-coin symbol:stc name:Student Coin 
 id:stvke-network symbol:stv name:STVKE 
 id:substratum symbol:sub name:Substratum 
@@ -5062,7 +5121,6 @@ id:sunny-coin symbol:sun name:Sunny Coin
 id:sun-token symbol:sun name:Sun Token 
 id:sup8eme symbol:sup8eme name:SUP8EME 
 id:super8 symbol:s8 name:Super8 
-id:super-bitcoin symbol:sbtc name:Super Bitcoin 
 id:super-black-hole symbol:hole name:Super Black Hole 
 id:supercoin symbol:super name:SuperCoin 
 id:super-coinview-token symbol:scv name:Super CoinView Token 
@@ -5111,7 +5169,6 @@ id:swirge symbol:swg name:Swirge
 id:swissborg symbol:chsb name:SwissBorg 
 id:swisscoin-classic symbol:sicc name:Swisscoin-Classic 
 id:swiss-finance symbol:swiss name:swiss.finance 
-id:swissvitebond symbol:svb name:SwissViteBond 
 id:switch symbol:esh name:Switch 
 id:switcheo symbol:swth name:Switcheo 
 id:swtcoin symbol:swat name:SWTCoin 
@@ -5132,8 +5189,8 @@ id:sync-network symbol:sync name:Sync Network
 id:syndicate symbol:synx name:Syndicate 
 id:synergy symbol:snrg name:Synergy 
 id:synlev symbol:syn name:SynLev 
+id:synth-soil symbol:soil name:Synth sOIL 
 id:syscoin symbol:sys name:Syscoin 
-id:taas symbol:taas name:TaaS 
 id:tacos symbol:taco name:Tacos 
 id:tadpole-finance symbol:tad name:Tadpole 
 id:tagcoin symbol:tag name:Tagcoin 
@@ -5149,6 +5206,7 @@ id:tama-egg-niftygotchi symbol:tme name:TAMA EGG NiftyGotchi
 id:tamy-token symbol:tmt name:Tamy Token 
 id:tao-network symbol:tao name:Tao Network 
 id:tap symbol:xtp name:Tap 
+id:tapmydata symbol:tap name:Tapmydata 
 id:tap-project symbol:ttt name:Tapcoin 
 id:tartarus symbol:tar name:Tartarus 
 id:tarush symbol:tas name:TARUSH 
@@ -5218,6 +5276,7 @@ id:the-bitcoin-family symbol:family name:The Bitcoin Family
 id:thecash symbol:tch name:THECASH 
 id:the-champcoin symbol:tcc name:The ChampCoin 
 id:the-currency-analytics symbol:tcat name:The Currency Analytics 
+id:the-famous-token symbol:tft name:The Famous Token 
 id:the-forbidden-forest symbol:forestplus name:The Forbidden Forest 
 id:thefutbolcoin symbol:tfc name:TheFutbolCoin 
 id:thegcccoin symbol:gcc name:Global Cryptocurrency 
@@ -5233,7 +5292,6 @@ id:themis-2 symbol:mis name:Themis
 id:the-movement symbol:mvt name:The Movement 
 id:the-node symbol:the name:THENODE 
 id:the-other-deadness symbol:ded name:The Other Deadness 
-id:thepowercoin symbol:tpwr name:ThePowerCoin 
 id:theresa-may-coin symbol:may name:Theresa May Coin 
 id:the-sandbox symbol:sand name:SAND 
 id:the-stone-coin symbol:sto name:THE STONE COIN 
@@ -5361,7 +5419,6 @@ id:tradeplus symbol:tdps name:Tradeplus
 id:tradepower-dex symbol:tdex name:TradePower Dex 
 id:trade-token symbol:tiox name:Trade Token X 
 id:trade-win symbol:twi name:Trade.win 
-id:tradez symbol:trz name:TRADEZ 
 id:trading-pool-coin symbol:tpc name:Trading Pool Coin 
 id:tradove symbol:bbc name:TraDove B2BCoin 
 id:tranium symbol:trm name:Tranium 
@@ -5372,7 +5429,6 @@ id:transfercoin symbol:tx name:Transfercoin
 id:transfer-coin symbol:tfc name:Transfer Coin 
 id:transmute symbol:XPb name:Transmute 
 id:tratok symbol:trat name:Tratok 
-id:travel1click symbol:t1c name:Travel1Click 
 id:travelnote symbol:tvnt name:TravelNote 
 id:traxia symbol:tmt name:Traxia 
 id:trcb-chain symbol:trcb name:TRCB Chain 
@@ -5437,8 +5493,6 @@ id:truehkd symbol:thkd name:TrueHKD
 id:true-seigniorage-dollar symbol:tsd name:True Seigniorage Dollar 
 id:true-usd symbol:tusd name:TrueUSD 
 id:trumpcoin symbol:trump name:Trumpcoin 
-id:trump-loses-token symbol:trumplose name:Trump Loses Token 
-id:trump-wins-token symbol:trumpwin name:Trump Wins Token 
 id:trust symbol:trust name:Harmony Block Capital 
 id:trustdao symbol:trust name:TrustDAO 
 id:trust-ether-reorigin symbol:teo name:Trust Ether ReOrigin 
@@ -5450,6 +5504,7 @@ id:trustusd symbol:trusd name:TrustUSD
 id:trustverse symbol:trv name:TrustVerse 
 id:trust-wallet-token symbol:twt name:Trust Wallet Token 
 id:trybe symbol:trybe name:Trybe 
+id:try-finance symbol:try name:Try.Finance 
 id:tsingzou-tokyo-medical-cooperation symbol:ttmc name:Tsingzou-Tokyo Medical Cooperation 
 id:ttanslateme-network-token symbol:TMN name:TranslateMe Network Token 
 id:ttc-protocol symbol:maro name:Maro 
@@ -5470,7 +5525,6 @@ id:tvt symbol:tvt name:TVT
 id:twinkle-2 symbol:tkt name:Twinkle 
 id:twist symbol:TWIST name:TWIST 
 id:two-prime-ff1-token symbol:ff1 name:Two Prime FF1 Token 
-id:tw-token symbol:tw name:TW Token 
 id:txt symbol:txt name:TXT 
 id:tycoon-global symbol:tct name:Tycoon Global 
 id:tyercoin symbol:trc name:Tyercoin 
@@ -5488,7 +5542,6 @@ id:uca symbol:uca name:UCA Coin
 id:ucash symbol:ucash name:U.CASH 
 id:uchain symbol:ucn name:UChain 
 id:ucoin symbol:u name:Ucoin 
-id:ucoins symbol:ucns name:UCoins 
 id:ucot symbol:uct name:Ubique Chain of Things (UCOT) 
 id:ucrowdme symbol:ucm name:UCROWDME 
 id:ucx symbol:ucx name:UCX 
@@ -5510,6 +5563,7 @@ id:ultrain symbol:ugas name:Ultrain
 id:ultralpha symbol:uat name:UltrAlpha 
 id:uma symbol:uma name:UMA 
 id:umbrellacoin symbol:umc name:Umbrella Coin 
+id:umbrella-network symbol:umb name:Umbrella Network 
 id:unagii-dai symbol:udai name:Unagii Dai 
 id:unagii-tether-usd symbol:uusdt name:Unagii Tether USD 
 id:unagii-usd-coin symbol:uusdc name:Unagii USD Coin 
@@ -5527,7 +5581,7 @@ id:unicrypt-2 symbol:uncx name:UniCrypt
 id:unidex symbol:unidx name:UniDex 
 id:unidexgas symbol:undg name:UniDexGas 
 id:unidollar symbol:uniusd name:UniDollar 
-id:unifi symbol:unifi name:Unifi 
+id:unifi symbol:unifi name:Covenants 
 id:unification symbol:fund name:Unification 
 id:unifi-defi symbol:unifi name:UNIFI DeFi 
 id:unifi-protocol symbol:up name:UniFi Protocol 
@@ -5611,7 +5665,6 @@ id:usdx symbol:usdx name:USDX
 id:usdx-stablecoin symbol:usdx name:USDx Stablecoin 
 id:usdx-wallet symbol:usdx name:USDX Cash 
 id:usechain symbol:use name:Usechain 
-id:useless-eth-token-lite symbol:uetl name:Useless Eth Token Lite 
 id:uselink-chain symbol:ul name:Uselink chain 
 id:uservice symbol:ust name:Uservice 
 id:usgold symbol:usg name:USGold 
@@ -5624,6 +5677,7 @@ id:utu-coin symbol:utu name:UTU Coin
 id:uusdrbtc-synthetic-token-expiring-1-october-2020 symbol:uUSDrBTC-OCT name:uUSDrBTC Synthetic Token Expiring 1 October 2020 
 id:uusdrbtc-synthetic-token-expiring-31-december-2020 symbol:uUSDrBTC-DEC name:uUSDrBTC Synthetic Token Expiring 31 December 2020 
 id:v2x-token symbol:v2xt name:V2X Token 
+id:vai symbol:vai name:Vai 
 id:valid symbol:vld name:Vetri 
 id:valireum symbol:vlm name:Valireum 
 id:valix symbol:vlx name:Vallix 
@@ -5632,6 +5686,7 @@ id:valorbit symbol:val name:Valorbit
 id:valuechain symbol:vlc name:ValueChain 
 id:valuecybertoken symbol:vct name:ValueCyberToken 
 id:value-liquidity symbol:value name:Value Liquidity 
+id:value-usd symbol:vusd name:Value USD 
 id:valuto symbol:vlu name:Valuto 
 id:vampire-protocol symbol:vamp name:Vampire Protocol 
 id:va-na-su symbol:vns name:Va Na Su 
@@ -5652,6 +5707,7 @@ id:vbzrx symbol:vbzrx name:bZx Vesting Token
 id:vcash-token symbol:vcash name:VCash Token 
 id:vechain symbol:vet name:VeChain 
 id:veco symbol:veco name:Veco 
+id:vecrv-dao-yvault symbol:yve-crvdao name:veCRV-DAO yVault 
 id:vectoraic symbol:vt name:Vectoraic 
 id:vectorium symbol:vect name:Vectorium 
 id:vectorspace symbol:vxv name:Vectorspace AI 
@@ -5669,6 +5725,21 @@ id:venjocoin symbol:vjc name:VENJOCOIN
 id:venom-shards symbol:vnm name:Venom Shards 
 id:venox symbol:vnx name:Venox 
 id:venus symbol:xvs name:Venus 
+id:venus-bch symbol:vbch name:Venus BCH 
+id:venus-beth symbol:vbeth name:Venus BETH 
+id:venus-btc symbol:vbtc name:Venus BTC 
+id:venus-busd symbol:vbusd name:Venus BUSD 
+id:venus-dai symbol:vdai name:Venus DAI 
+id:venus-dot symbol:vdot name:Venus DOT 
+id:venus-eth symbol:veth name:Venus ETH 
+id:venus-fil symbol:vfil name:Venus FIL 
+id:venus-link symbol:vlink name:Venus LINK 
+id:venus-ltc symbol:vltc name:Venus LTC 
+id:venus-sxp symbol:vsxp name:Venus SXP 
+id:venus-usdc symbol:vusdc name:Venus USDC 
+id:venus-usdt symbol:vusdt name:Venus USDT 
+id:venus-xrp symbol:vxrp name:Venus XRP 
+id:venus-xvs symbol:vxvs name:Venus XVS 
 id:vera symbol:vera name:VERA 
 id:vera-cruz-coin symbol:vcco name:Vera Cruz Coin 
 id:veraone symbol:vro name:VeraOne 
@@ -5754,6 +5825,7 @@ id:voytek-bear-coin symbol:bear name:BEAR Coin
 id:vpncoin symbol:vash name:VPNCoin 
 id:vslice symbol:vsl name:vSlice 
 id:vsportcoin symbol:vsc name:vSportCoin 
+id:vspy symbol:vspy name:vSPY 
 id:vsync symbol:vsx name:Vsync 
 id:v-systems symbol:vsys name:V.SYSTEMS 
 id:vulcano symbol:quo name:Quoxent 
@@ -5772,6 +5844,7 @@ id:waltonchain symbol:wtc name:Waltonchain
 id:wanchain symbol:wan name:Wanchain 
 id:wandx symbol:wand name:WandX 
 id:warlord-token symbol:wlt name:Warlord Token 
+id:warp-finance symbol:warp name:Warp Finance 
 id:warranty-chain symbol:wac name:Warranty Chain 
 id:waterdrop symbol:wdp name:WaterDrop 
 id:water-token-2 symbol:wtr name:Water Token 
@@ -5914,6 +5987,7 @@ id:xdna symbol:xdna name:XDNA
 id:xenios symbol:xnc name:Xenios 
 id:xeniumx symbol:xemx name:Xeniumx 
 id:xenon-2 symbol:xen name:Xenon 
+id:xeno-token symbol:xno name:Xeno Token 
 id:xensor symbol:xsr name:Xensor 
 id:xeonbit symbol:xnb name:Xeonbit 
 id:xeonbit-token symbol:xns name:Xeonbit Token 
@@ -5926,6 +6000,8 @@ id:xfuel symbol:xfuel name:XFUEL
 id:xfund symbol:xfund name:xFund 
 id:xgalaxy symbol:xgcs name:xGalaxy 
 id:xgox symbol:xgox name:XGOX 
+id:xincha symbol:xINCHa name:xINCHa 
+id:xinchb symbol:xINCHb name:xINCHb 
 id:xio symbol:xio name:Blockzero Labs 
 id:xiotri symbol:xiot name:Xiotri 
 id:xiropht symbol:xiro name:Xiropht 
@@ -6036,6 +6112,7 @@ id:yfiscurity symbol:yfis name:YFISCURITY
 id:yfive-finance symbol:yfive name:YFIVE FINANCE 
 id:yfix-finance symbol:yfix name:YFIX.finance 
 id:yflink symbol:yfl name:YF Link 
+id:yflink-synthetic symbol:syfl name:YFLink Synthetic 
 id:yfmoonbeam symbol:yfmb name:YFMoonBeam 
 id:yfmoonshot symbol:yfms name:YFMoonshot 
 id:yfos-finance symbol:YFOS name:YFOS.finance 
@@ -6055,6 +6132,7 @@ id:yield-breeder-dao symbol:ybree name:Yield Breeder DAO
 id:yield-coin symbol:yld name:Yield Coin 
 id:yield-farming-known-as-ash symbol:yfka name:Yield Farming Known as Ash 
 id:yield-farming-token symbol:YFT name:Yield Farming Token 
+id:yieldnyan-token symbol:nyan name:YieldNyan Token 
 id:yield-optimization-platform symbol:yop name:Yield Optimization Platform & Protocol 
 id:yieldwars-com symbol:war name:YieldWars 
 id:yieldx symbol:yieldx name:YieldX 
@@ -6162,6 +6240,7 @@ id:zin symbol:Zin name:Zin
 id:zinc symbol:zinc name:ZINC 
 id:zioncoin symbol:znc name:ZionCoin 
 id:zip symbol:zip name:Zipper Network 
+id:zipmex-token symbol:zmt name:Zipmex Token 
 id:zippie symbol:zipt name:Zippie 
 id:zjlt-distributed-factoring-network symbol:zjlt name:ZJLT Distributed Factoring Network 
 id:zkswap symbol:zks name:ZKSwap 
@@ -6190,9 +6269,11 @@ id:zukacoin symbol:zuka name:Zukacoin
 id:zumcoin symbol:zum name:ZumCoin 
 id:zum-token symbol:zum name:ZUM TOKEN 
 id:zumy symbol:zmy name:Zumy 
+id:zupi-coin symbol:zupi name:Zupi Coin 
 id:zuplo symbol:zlp name:Zuplo 
 id:zynecoin symbol:zyn name:Zynecoin 
 id:zyro symbol:zyro name:Zyro 
+id:zytara-dollar symbol:zusd name:Zytara Dollar 
 id:zyx symbol:zyx name:ZYX 
 id:zzz-finance symbol:zzz name:zzz.finance 
 id:zzz-finance-v2 symbol:zzzv2 name:zzz.finance v2 
