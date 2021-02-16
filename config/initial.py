@@ -6,6 +6,8 @@ from utils.logger import logger
 
 from config.common import ROOT_DIR
 
+ETHSCAN_API_KEY = os.environ.get('ETHSCAN_API_KEY')
+
 # initial investments
 INITIAL_INV = os.path.join(ROOT_DIR, 'lists', 'initial_investments')
 if os.path.exists(INITIAL_INV):

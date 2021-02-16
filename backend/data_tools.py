@@ -1,11 +1,12 @@
 from pycoingecko import CoinGeckoAPI
+from etherscan import Etherscan
 
 from typing import List, Dict, Optional
 
 import os
 
 from config.common import COIN_LIST_FILEPATH
-from config.initial import initial_dict
+from config.initial import initial_dict, ETHSCAN_API_KEY
 
 from utils.logger import logger
 from utils.telegram import telegram_send
@@ -50,6 +51,7 @@ class DataHandler:
         self.coin_ids: Optional[List[str]] = None
         self.vs_currency = vs_currency
         self.cg = CoinGeckoAPI()
+        self.eth = Etherscan(ETHSCAN_API_KEY)
         self.prices: Dict[str, float]
         self.remote_initial = remote_initial
         self.the_initial_dict: Optional[Dict[str, float]] = None
@@ -75,6 +77,9 @@ class DataHandler:
         else:
             self.the_initial_dict = initial_dict
 
+    def _get_gas_estimate(self) -> str:
+        return self.eth.get_gas_oracle()["ProposeGasPrice"]
+
     def _calculate_returns(self) -> str:
         result_dict: Dict[str, float] = {}
         msg: str = ""
@@ -85,9 +90,13 @@ class DataHandler:
                     f'{result_dict}')
         return msg
 
+    def _add_gas_to_msg(self, msg: str) -> str:
+        msg += f"*Gas:* {self._get_gas_estimate()} Gwei\n"
+        return msg
+
     def send_msg(self) -> None:
         self._initialize_initial_dict()
         self._get_prices()
         msg = self._calculate_returns()
-        telegram_send(msg)
+        telegram_send(self._add_gas_to_msg(msg))
         logger.info(f"Message:\n {msg}\n was sent!")

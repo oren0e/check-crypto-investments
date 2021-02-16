@@ -18,17 +18,20 @@ def dh() -> DataHandler:
     return DataHandler()
 
 
+@mock.patch("backend.data_tools.DataHandler._add_gas_to_msg")
 @mock.patch('backend.data_tools.initial_dict')
 @mock.patch('backend.data_tools.telegram_send')
 @mock.patch("backend.data_tools.CoinGeckoAPI.get_price")
-def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, dh) -> None:
+def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, add_gas_to_msg, dh) -> None:
     mock_new_prices.return_value = {'coin_A': {'usd': 50}, 'coin_B': {'usd': 200}}
     d: Dict[str, float] = {'coin_A': 10, 'coin_B': 20}
     initial_dict_mock.__getitem__.side_effect = d.__getitem__
     initial_dict_mock.__iter__.side_effect = d.__iter__
     initial_dict_mock.items.side_effect = d.items
+    sent_msg = 'Return for coin_A: 400.0%\nReturn for coin_B: 900.0%\n' + f"*Gas:* 118 Gwei\n"
+    add_gas_to_msg.return_value = sent_msg
     dh.send_msg()
-    tele_mock.assert_called_with('Return for coin_A: 400.0%\nReturn for coin_B: 900.0%\n')
+    tele_mock.assert_called_with(sent_msg)
 
 
 @pytest.mark.integration
