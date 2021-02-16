@@ -7,8 +7,9 @@ with an alert via Telegram.
 ## Installation
 **Note**: Currently this tool is only available for Mac or Linux users.
 1. Clone this repo.
-2. `pip install pycoingecko`
-3. Create a text file called `initial_investments` inside the `lists/` folder. Each line in this file
+2. `pip install pycoingecko`  
+3. `pip install etherscan-python` (Go to https://etherscan.io/, sign up and get your API key).
+4. Create a text file called `initial_investments` inside the `lists/` folder. Each line in this file
 should contain the id of the coin you are interested to monitor followed by a single space
 followed by the initial price you bought this coin for (price per 1 coin).  
 _Note_: If you won't create this file default values will be used (for robustness sake only, the whole
@@ -23,7 +24,7 @@ For example, to search for the id of SNX:
         cs = CoinSearch()
         cs.search_for_coin('snx')
         ```
-4. For using telegram:
+5. For using telegram:
     - Check out [this link](https://core.telegram.org/bots#6-botfather) and get a token.
     - Get the `chat_id` by writing something in the chat of your new bot and then 
     visit `https://api.telegram.org/bot<YourBOTToken>/getUpdates` and get the `chat_id` under the key
