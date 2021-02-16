@@ -21,11 +21,11 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Execute python script
-    - env:
+      env:
+        ETHSCAN_API_KEY: ${{ secrets.ETHSCAN_API_KEY }}
         TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         AWS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
         AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
-        ETHSCAN_API_KEY: ${{ secrets.ETHSCAN_API_KEY }}
       run: |
         python cci.py -r
