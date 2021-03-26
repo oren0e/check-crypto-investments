@@ -103,6 +103,9 @@ class DataHandler:
 
 
 class CGroupHandler(DataHandler):
+    def __init__(self) -> None:
+        self.eth = Etherscan(ETHSCAN_API_KEY)
+
     def send_msg(self) -> None:
         msg = ""
         telegram_send(bot_pool.pool["cgroup_bot"], "cgroup_chat", self.add_gas_to_msg(msg))

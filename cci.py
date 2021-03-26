@@ -1,9 +1,14 @@
-from backend.data_tools import DataHandler
+from backend.data_tools import DataHandler, CGroupHandler
 
 import click
 
 
-@click.command()
+@click.group()
+def check():
+    pass
+
+
+@check.command()
 @click.option('-r', '--remote', is_flag=True, default=False, help="Get initial investments info from S3")
 def cci(remote: bool = False) -> None:
     if remote:
@@ -14,6 +19,11 @@ def cci(remote: bool = False) -> None:
     dh.send_msg()
 
 
+@check.command()
+def cgroup() -> None:
+    CGroupHandler().send_msg()
+
+
 if __name__ == '__main__':
-    cci()
+    check()
 
