@@ -90,7 +90,7 @@ class DataHandler:
                     f'{result_dict}')
         return msg
 
-    def _add_gas_to_msg(self, msg: str) -> str:
+    def add_gas_to_msg(self, msg: str) -> str:
         msg += f"*Gas:* {self._get_gas_estimate()} Gwei\n"
         return msg
 
@@ -98,5 +98,5 @@ class DataHandler:
         self._initialize_initial_dict()
         self._get_prices()
         msg = self._calculate_returns()
-        telegram_send(self._add_gas_to_msg(msg))
+        telegram_send(self.add_gas_to_msg(msg))
         logger.info(f"Message:\n {msg}\n was sent!")
