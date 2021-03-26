@@ -2,7 +2,7 @@ import os
 
 import requests
 
-from typing import Optional, Set, Dict
+from typing import Optional, Dict
 
 from dataclasses import dataclass, field
 
@@ -29,8 +29,18 @@ class Bot:
         return hash((self.name, self.api_token))
 
 
+@dataclass
+class BotPool:
+    pool: Dict[str, Bot] = field(default_factory=dict)
+
+    def add_bot(self, bot: Bot) -> None:
+        self.pool[bot.name] = bot
+
+
 if API_TOKEN and CHAT_ID:
-    bot_pool: Set[Bot] = set(Bot(name="cci_bot", api_token=API_TOKEN, chats={"cci_chat": Chat("cci_chat", chat_id=CHAT_ID)}))
+    bot_pool = BotPool(pool={"cci_bot": Bot(name="cci_bot", api_token=API_TOKEN, chats={"cci_chat": Chat("cci_chat", chat_id=CHAT_ID)})})
+else:
+    raise RuntimeError("Missing Telegram token or chat id")
 
 
 def telegram_send(bot: Bot, chat: str, message: str) -> None:
