@@ -9,7 +9,7 @@ from config.common import COIN_LIST_FILEPATH
 from config.initial import initial_dict, ETHSCAN_API_KEY
 
 from utils.logger import logger
-from utils.telegram import telegram_send
+from utils.telegram import telegram_send, bot_pool
 from utils import s3_settings
 
 
@@ -100,3 +100,9 @@ class DataHandler:
         msg = self._calculate_returns()
         telegram_send(self.add_gas_to_msg(msg))
         logger.info(f"Message:\n {msg}\n was sent!")
+
+
+class CGroupHandler(DataHandler):
+    def send_msg(self) -> None:
+        msg = ""
+        telegram_send(bot_pool.pool["cgroup_bot"], "cgroup_chat", self.add_gas_to_msg(msg))
