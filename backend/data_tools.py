@@ -98,7 +98,7 @@ class DataHandler:
         self._initialize_initial_dict()
         self._get_prices()
         msg = self._calculate_returns()
-        telegram_send(self.add_gas_to_msg(msg))
+        telegram_send(bot_pool.pool["cci_bot"], "cci_chat", self.add_gas_to_msg(msg))
         logger.info(f"Message:\n {msg}\n was sent!")
 
 
