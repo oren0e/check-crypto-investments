@@ -9,7 +9,7 @@ from config.common import COIN_LIST_FILEPATH
 from config.initial import initial_dict, ETHSCAN_API_KEY
 
 from utils.logger import logger
-from utils.telegram import telegram_send, bot_pool
+from utils.telegram import telegram_send, Bot, Chat, BotPool
 from utils import s3_settings
 
 
@@ -45,6 +45,11 @@ class CoinSearch:
             os.system(f"cat {COIN_LIST_FILEPATH} | grep {text}")
 
 
+"""
+Everytime you'll want to add a bot you'll have to couple it with a dedicated handler
+"""
+
+
 class DataHandler:
 
     def __init__(self, vs_currency: str = 'usd', remote_initial: bool = False) -> None:
@@ -55,9 +60,16 @@ class DataHandler:
         self.prices: Dict[str, float]
         self.remote_initial = remote_initial
         self.the_initial_dict: Optional[Dict[str, float]] = None
+        self.bot_pool = BotPool()
+        self.API_TOKEN: Optional[str] = os.environ.get('TELEGRAM_API_TOKEN')
+        self.CHAT_ID: Optional[str] = os.environ.get('TELEGRAM_CHAT_ID')
         logger.info(f'--------------------- Class {self.__class__.__name__}'
                     f' initiated with parameters: coin_ids={self.coin_ids},'
                     f'vs_currency={self.vs_currency}, remote_initial={self.remote_initial}, the_initial_dict={self.the_initial_dict}')
+
+    def _initialize_bots(self) -> None:
+        self.bot_pool.add_bot(
+            Bot(name="cci_bot", api_token=self.API_TOKEN, chats={"cci_chat": Chat("cci_chat", chat_id=self.CHAT_ID)}))
 
     def _get_prices(self) -> None:
         """
@@ -95,17 +107,26 @@ class DataHandler:
         return msg
 
     def send_msg(self) -> None:
+        self._initialize_bots()
         self._initialize_initial_dict()
         self._get_prices()
         msg = self._calculate_returns()
-        telegram_send(bot_pool.pool["cci_bot"], "cci_chat", self.add_gas_to_msg(msg))
+        telegram_send(self.bot_pool.pool["cci_bot"], "cci_chat", self.add_gas_to_msg(msg))
         logger.info(f"Message:\n {msg}\n was sent!")
 
 
 class CGroupHandler(DataHandler):
     def __init__(self) -> None:
         self.eth = Etherscan(ETHSCAN_API_KEY)
+        self.API_TOKEN: Optional[str] = os.environ.get("TELEGRAM_CGROUP_TOKEN")
+        self.CHAT_ID: Optional[str] = os.environ.get("TELEGRAM_CGROUP_CHAT_ID")
+        self.bot_pool = BotPool()
+
+    def _initialize_bots(self) -> None:
+        self.bot_pool.add_bot(Bot(name="cgroup_bot", api_token=self.API_TOKEN,
+                             chats={"cgroup_chat": Chat("cgroup_chat", chat_id=self.CHAT_ID)}))
 
     def send_msg(self) -> None:
+        self._initialize_bots()
         msg = ""
-        telegram_send(bot_pool.pool["cgroup_bot"], "cgroup_chat", self.add_gas_to_msg(msg))
+        telegram_send(self.bot_pool.pool["cgroup_bot"], "cgroup_chat", self.add_gas_to_msg(msg))
