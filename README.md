@@ -34,9 +34,12 @@ For example, to search for the id of SNX:
 
 ## Usage
 The main purpose of this tool is for scheduling a cron-job on an always available instance (i.e., server).
-The usage is simple: `python cci.py`.  
+The usage is simple: `python cci.py cci`.  
+The additional command `python cci.py cgroup` is an example of adding a second bot for some other group, e.g.,
+you want to send gas updates to your friends. Note that each such dedicated group/bot should have a separate handler
+class which inherits some or all of the methods from `DataHandler` class.
 ### Usage - S3
-If the command is issued with `python cci.py -r` the initial investments list will be taken from S3 bucket
+If the command is issued with `python cci.py cci -r` the initial investments list will be taken from S3 bucket
 which, in case you're interested to use it, you would have to create on your own. I created this option
 mainly so I'll be able to receive updates automatically by scheduling a run through github workflows.
 
@@ -47,3 +50,4 @@ mainly so I'll be able to receive updates automatically by scheduling a run thro
 4. Make available for Windows users as well
 5. Add more linters to the CI
 6. Use poetry for requirements
+7. Make the class inheritance more precise with `BaseHandler` instead of inheriting from the more specific `DataHandler`
