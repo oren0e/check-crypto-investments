@@ -8,8 +8,8 @@ except ImportError:
     ENV_VARS_TO_SUSPEND = []
 
 
-@pytest.fixture(scope="session", autouse=True)
-def tests_setup_and_teardown() -> None:
+@pytest.fixture
+def fake_credentials() -> None:
     # Execute before the first test
     old_environ = dict(os.environ)
     os.environ.update(TEMP_ENV_VARS)

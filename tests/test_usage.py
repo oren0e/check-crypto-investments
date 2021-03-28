@@ -15,12 +15,12 @@ def cs() -> CoinSearch:
 
 
 @pytest.fixture
-def dh() -> DataHandler:
+def dh(fake_credentials) -> DataHandler:
     return DataHandler()
 
 
 @pytest.fixture
-def cgroup_handler() -> CGroupHandler:
+def cgroup_handler(fake_credentials) -> CGroupHandler:
     return CGroupHandler()
 
 
