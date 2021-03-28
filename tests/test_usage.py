@@ -1,5 +1,6 @@
-from backend.data_tools import DataHandler, CoinSearch, CoinGeckoAPI
+from backend.data_tools import DataHandler, CoinSearch, CoinGeckoAPI, CGroupHandler
 from utils import s3_settings
+
 
 from unittest import mock
 
@@ -14,11 +15,16 @@ def cs() -> CoinSearch:
 
 
 @pytest.fixture
-def dh() -> DataHandler:
+def dh(fake_credentials) -> DataHandler:
     return DataHandler()
 
 
-@mock.patch("backend.data_tools.DataHandler._add_gas_to_msg")
+@pytest.fixture
+def cgroup_handler(fake_credentials) -> CGroupHandler:
+    return CGroupHandler()
+
+
+@mock.patch("backend.data_tools.DataHandler.add_gas_to_msg")
 @mock.patch('backend.data_tools.initial_dict')
 @mock.patch('backend.data_tools.telegram_send')
 @mock.patch("backend.data_tools.CoinGeckoAPI.get_price")
@@ -31,7 +37,16 @@ def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, add_ga
     sent_msg = 'Return for coin_A: 400.0%\nReturn for coin_B: 900.0%\n' + f"*Gas:* 118 Gwei\n"
     add_gas_to_msg.return_value = sent_msg
     dh.send_msg()
-    tele_mock.assert_called_with(sent_msg)
+    tele_mock.assert_called_with(dh.bot_pool.pool["cci_bot"], "cci_chat", sent_msg)
+
+
+@mock.patch('backend.data_tools.telegram_send')
+@mock.patch("backend.data_tools.DataHandler.add_gas_to_msg")
+def test_cgroup_send_msg(add_gas_to_msg, tele_mock, cgroup_handler) -> None:
+    sent_msg = f"*Gas:* 118 Gwei\n"
+    add_gas_to_msg.return_value = sent_msg
+    cgroup_handler.send_msg()
+    tele_mock.assert_called_with(cgroup_handler.bot_pool.pool["cgroup_bot"], "cgroup_chat", sent_msg)
 
 
 @pytest.mark.integration
@@ -41,6 +56,7 @@ def test_api_response() -> None:
     assert ans, "CoinGeckoAPI did not return a response!"
 
 
+@pytest.mark.integration
 def test_s3() -> None:
     s3_resource = s3_settings.session.resource('s3')
     body = s3_resource.Object(s3_settings.S3_BUCKET, "initial_investments").get()['Body'].read().decode('utf-8')
