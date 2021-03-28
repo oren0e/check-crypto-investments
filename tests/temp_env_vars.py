@@ -1,0 +1,10 @@
+TEMP_ENV_VARS = {
+    "TELEGRAM_API_TOKEN": "123abc",
+    "TELEGRAM_CGROUP_TOKEN": "456def",
+    "TELEGRAM_CHAT_ID": "123",
+    "TELEGRAM_CGROUP_CHAT_ID": "456",
+    "AWS_KEY_ID": "aws6",
+    "AWS_SECRET_KEY": "abc"
+}
+
+ENV_VARS_TO_SUSPEND = []
