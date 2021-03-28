@@ -1,5 +1,7 @@
+from utils.telegram import Bot, Chat
 from backend.data_tools import DataHandler, CoinSearch, CoinGeckoAPI
 from utils import s3_settings
+
 
 from unittest import mock
 
@@ -18,11 +20,12 @@ def dh() -> DataHandler:
     return DataHandler()
 
 
-@mock.patch("backend.data_tools.DataHandler._add_gas_to_msg")
+@mock.patch("backend.data_tools.bot_pool")
+@mock.patch("backend.data_tools.DataHandler.add_gas_to_msg")
 @mock.patch('backend.data_tools.initial_dict')
 @mock.patch('backend.data_tools.telegram_send')
 @mock.patch("backend.data_tools.CoinGeckoAPI.get_price")
-def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, add_gas_to_msg, dh) -> None:
+def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, add_gas_to_msg, bot_pool_mock, dh) -> None:
     mock_new_prices.return_value = {'coin_A': {'usd': 50}, 'coin_B': {'usd': 200}}
     d: Dict[str, float] = {'coin_A': 10, 'coin_B': 20}
     initial_dict_mock.__getitem__.side_effect = d.__getitem__
@@ -31,7 +34,7 @@ def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, add_ga
     sent_msg = 'Return for coin_A: 400.0%\nReturn for coin_B: 900.0%\n' + f"*Gas:* 118 Gwei\n"
     add_gas_to_msg.return_value = sent_msg
     dh.send_msg()
-    tele_mock.assert_called_with(sent_msg)
+    tele_mock.assert_called_with(bot_pool_mock.pool["cci_bot"], "cci_chat", sent_msg)
 
 
 @pytest.mark.integration
