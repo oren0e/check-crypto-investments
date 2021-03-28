@@ -18,6 +18,7 @@ def cs() -> CoinSearch:
 def dh() -> DataHandler:
     return DataHandler()
 
+
 @pytest.fixture
 def cgroup_handler() -> CGroupHandler:
     return CGroupHandler()
