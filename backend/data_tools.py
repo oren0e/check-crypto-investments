@@ -44,27 +44,26 @@ class CoinSearch:
 
 
 class PriceHandler:
-    def __init__(self, initial_investments: Dict[str, float], vs_currency: str = 'usd') -> None:
+    def __init__(self, vs_currency: str = 'usd') -> None:
         self.vs_currency = vs_currency
         self.cg = CoinGeckoAPI()
         self.coin_ids: Optional[List[str]] = None
         self.prices: Optional[Dict[str, float]] = None
-        self.initial_investments: Dict[str, float] = initial_investments
 
-    def get_prices(self) -> "PriceHandler":
+    def get_prices(self, initial_investments: Dict[str, float]) -> "PriceHandler":
         """
         Calculates dict with coin names
         and their current prices
         """
-        self.coin_ids = list(self.initial_investments.keys())
+        self.coin_ids = list(initial_investments.keys())
         raw_prices: Dict[str, Dict[str, float]] = self.cg.get_price(ids=self.coin_ids, vs_currencies=self.vs_currency)
         self.prices = {key: value[self.vs_currency] for key, value in raw_prices.items()}
         logger.info(f'Got prices {self.prices}')
         return self
 
-    def calculate_returns(self) -> Dict[str, float]:
+    def calculate_returns(self, initial_investments: Dict[str, float]) -> Dict[str, float]:
         result_dict: Dict[str, float] = {}
-        for key, value in self.initial_investments.items():
+        for key, value in initial_investments.items():
             result_dict[key] = round(((self.prices[key] - value) / value) * 100, 1)
         logger.info(f"Got dictionary of returns: {result_dict}")
         return result_dict

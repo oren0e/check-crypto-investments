@@ -24,7 +24,7 @@ def main(source: str = "local", only_gas: bool = False) -> None:
         telegram_send(bot_pool.pool["cgroup_bot"], "cgroup_chat", gas_msg)
     else:
         initial_investments = data_reader.get_initial_investments_from_source("initial_investments", source)
-        returns = PriceHandler(initial_investments).get_prices().calculate_returns()
+        returns = PriceHandler().get_prices(initial_investments).calculate_returns(initial_investments)
         output_msg = DataDisplayer.display_returns(returns) + gas_msg
         telegram_send(bot_pool.pool["cci_bot"], "cci_chat", output_msg)
 

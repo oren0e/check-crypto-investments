@@ -1,52 +1,44 @@
-from backend.data_tools import DataHandler, CoinSearch, CoinGeckoAPI, CGroupHandler
 from utils import s3_settings
-
 
 from unittest import mock
 
 import pytest
 
-from typing import Dict
+import os
+
+from backend.data_tools import CoinGeckoAPI
+from utils.telegram import Bot, Chat, BotPool
+from cci import main
 
 
-@pytest.fixture
-def cs() -> CoinSearch:
-    return CoinSearch()
+def test_calculate_returns(initial_investments, price_handler, mock_returns, mock_new_prices) -> None:
+    with mock.patch.object(price_handler, "prices", mock_new_prices):
+        assert price_handler.calculate_returns(initial_investments) == mock_returns
 
 
-@pytest.fixture
-def dh(fake_credentials) -> DataHandler:
-    return DataHandler()
-
-
-@pytest.fixture
-def cgroup_handler(fake_credentials) -> CGroupHandler:
-    return CGroupHandler()
-
-
-@mock.patch("backend.data_tools.DataHandler.add_gas_to_msg")
-@mock.patch('backend.data_tools.initial_dict')
-@mock.patch('backend.data_tools.telegram_send')
 @mock.patch("backend.data_tools.CoinGeckoAPI.get_price")
-def test_calculate_returns(mock_new_prices, tele_mock, initial_dict_mock, add_gas_to_msg, dh) -> None:
-    mock_new_prices.return_value = {'coin_A': {'usd': 50}, 'coin_B': {'usd': 200}}
-    d: Dict[str, float] = {'coin_A': 10, 'coin_B': 20}
-    initial_dict_mock.__getitem__.side_effect = d.__getitem__
-    initial_dict_mock.__iter__.side_effect = d.__iter__
-    initial_dict_mock.items.side_effect = d.items
-    sent_msg = 'Return for coin_A: 400.0%\nReturn for coin_B: 900.0%\n' + f"*Gas:* 118 Gwei\n"
-    add_gas_to_msg.return_value = sent_msg
-    dh.send_msg()
-    tele_mock.assert_called_with(dh.bot_pool.pool["cci_bot"], "cci_chat", sent_msg)
+def test_get_prices(new_prices_mock, initial_investments, price_handler) -> None:
+    new_prices_mock.return_value = {'coin_A': {'usd': 50}, 'coin_B': {'usd': 200}}
+    assert price_handler.get_prices(initial_investments).prices == {'coin_A': 50, 'coin_B': 200}
 
 
-@mock.patch('backend.data_tools.telegram_send')
-@mock.patch("backend.data_tools.DataHandler.add_gas_to_msg")
-def test_cgroup_send_msg(add_gas_to_msg, tele_mock, cgroup_handler) -> None:
-    sent_msg = f"*Gas:* 118 Gwei\n"
-    add_gas_to_msg.return_value = sent_msg
-    cgroup_handler.send_msg()
-    tele_mock.assert_called_with(cgroup_handler.bot_pool.pool["cgroup_bot"], "cgroup_chat", sent_msg)
+def test_display_returns(data_displayer, mock_returns) -> None:
+    assert data_displayer.display_returns(mock_returns) == 'Return for coin_A: 400.0%\nReturn for coin_B: 900.0%\n'
+
+
+def test_default_get_initial_investments_from_source(data_reader) -> None:
+    assert data_reader.get_initial_investments_from_source("abcdr") == {'bitcoin': 500, 'ethereum': 300}
+
+
+@mock.patch("cci.DataDisplayer.display_eth_gas")
+@mock.patch('cci.telegram_send')
+def test_telegram_send(telegram_send_mock, mock_gas, data_reader) -> None:
+    bot_pool = BotPool()
+    bot_pool.add_bot(Bot(name="cgroup_bot", api_token=os.environ.get("TELEGRAM_CGROUP_TOKEN"),
+                         chats={"cgroup_chat": Chat("cgroup_chat", chat_id=os.environ.get("TELEGRAM_CGROUP_CHAT_ID"))}))
+    mock_gas.return_value = "*Gas:* 118 Gwei\n"
+    main("local", only_gas=True)
+    telegram_send_mock.assert_called_with(bot_pool.pool["cgroup_bot"], "cgroup_chat", "*Gas:* 118 Gwei\n")
 
 
 @pytest.mark.integration
