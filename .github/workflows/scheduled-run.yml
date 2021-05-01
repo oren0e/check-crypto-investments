@@ -30,6 +30,6 @@ jobs:
         TELEGRAM_CGROUP_TOKEN: ${{ secrets.TELEGRAM_CGROUP_TOKEN }}
         TELEGRAM_CGROUP_CHAT_ID: ${{ secrets.TELEGRAM_CGROUP_CHAT_ID }}
       run: |
-        python cci.py cci -r
-        python cci.py cgroup
+        python cci.py -s remote
+        python cci.py -s remote --only-gas
 
