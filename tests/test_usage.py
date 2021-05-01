@@ -30,12 +30,14 @@ def test_default_get_initial_investments_from_source(data_reader) -> None:
     assert data_reader.get_initial_investments_from_source("abcdr") == {'bitcoin': 500, 'ethereum': 300}
 
 
+@mock.patch("cci.DataReader.get_gas_estimate")
 @mock.patch("cci.DataDisplayer.display_eth_gas")
 @mock.patch('cci.telegram_send')
-def test_telegram_send(telegram_send_mock, mock_gas, data_reader) -> None:
+def test_telegram_send(telegram_send_mock, mock_gas, mock_gas_api, data_reader) -> None:
     bot_pool = BotPool()
     bot_pool.add_bot(Bot(name="cgroup_bot", api_token=os.environ.get("TELEGRAM_CGROUP_TOKEN"),
                          chats={"cgroup_chat": Chat("cgroup_chat", chat_id=os.environ.get("TELEGRAM_CGROUP_CHAT_ID"))}))
+    mock_gas_api.return_value = ""
     mock_gas.return_value = "*Gas:* 118 Gwei\n"
     main("local", only_gas=True)
     telegram_send_mock.assert_called_with(bot_pool.pool["cgroup_bot"], "cgroup_chat", "*Gas:* 118 Gwei\n")
