@@ -29,6 +29,10 @@ jobs:
       env:
         AWS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
         AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+        TELEGRAM_CGROUP_TOKEN: ${{ secrets.TELEGRAM_CGROUP_TOKEN }}
+        TELEGRAM_CGROUP_CHAT_ID: ${{ secrets.TELEGRAM_CGROUP_CHAT_ID }}
+        TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: |
         make test
 
@@ -56,5 +60,9 @@ jobs:
       env:
         AWS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
         AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+        TELEGRAM_CGROUP_TOKEN: ${{ secrets.TELEGRAM_CGROUP_TOKEN }}
+        TELEGRAM_CGROUP_CHAT_ID: ${{ secrets.TELEGRAM_CGROUP_CHAT_ID }}
+        TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: |
         make test_all

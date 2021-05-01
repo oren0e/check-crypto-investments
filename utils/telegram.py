@@ -4,6 +4,8 @@ from typing import Dict
 
 from dataclasses import dataclass, field
 
+from utils.logger import logger
+
 
 @dataclass
 class Chat:
@@ -30,6 +32,7 @@ class BotPool:
 
     def add_bot(self, bot: Bot) -> None:
         if not (bot.api_token and bot.chats):
+            logger.error("Missing Telegram token or chat id")
             raise RuntimeError("Missing Telegram token or chat id")
         self.pool[bot.name] = bot
 
@@ -39,5 +42,7 @@ def telegram_send(bot: Bot, chat: str, message: str) -> None:
         send_msg = 'https://api.telegram.org/bot' + bot.api_token + '/sendMessage?chat_id=' +\
                    bot.chats[chat].chat_id + '&parse_mode=Markdown&text=' + message
         requests.get(send_msg)
+        logger.info(f"Message:\n {message}\n was sent!")
     else:
+        logger.error("Missing Telegram token or chat id")
         raise RuntimeError("Missing Telegram token or chat id")
