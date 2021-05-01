@@ -15,4 +15,4 @@ if os.path.exists(INITIAL_INV):
         initial_dict: Dict[str, float] = {line.strip().split()[0]: float(line.strip().split()[1]) for line in f if not line.startswith("#")}
 else:
     initial_dict: Dict[str, float] = {'bitcoin': 500, 'ethereum': 300}
-    logger.warning("!!! Warning: initial_investments file was not found, using defaults instead.")
+    logger.warning("Initial_investments file was not found, using defaults instead.")
