@@ -34,20 +34,19 @@ For example, to search for the id of SNX:
 
 ## Usage
 The main purpose of this tool is for scheduling a cron-job on an always available instance (i.e., server).
-The usage is simple: `python cci.py cci`.  
-The additional command `python cci.py cgroup` is an example of adding a second bot for some other group, e.g.,
-you want to send gas updates to your friends. Note that each such dedicated group/bot should have a separate handler
-class which inherits some or all of the methods from `DataHandler` class.
+The usage is simple: `python cci.py`. The available options are `-s [local|remote]` (see below), and `--only-gas`
+for an update only on gas prices. Note that currently it is coupled with a specific bot.
+
 ### Usage - S3
-If the command is issued with `python cci.py cci -r` the initial investments list will be taken from S3 bucket
+If the command is issued with `python cci.py -s remote` the initial investments list will be taken from S3 bucket
 which, in case you're interested to use it, you would have to create on your own. I created this option
 mainly so I'll be able to receive updates automatically by scheduling a run through github workflows.
 
 ## TODO
-1. Make a library for easy installation
-2. Add an option for a threshold only above which alerts will be sent to Telegram
-3. Write more tests
-4. Make available for Windows users as well
-5. Add more linters to the CI
-6. Use poetry for requirements
-7. Make the class inheritance more precise with `BaseHandler` instead of inheriting from the more specific `DataHandler`
+1. Decouple the `--only-gas` option from a specific bot. (Important!)
+2. Make a library for easy installation
+3. Add an option for a threshold only above which alerts will be sent to Telegram
+4. Write more tests
+5. Make available for Windows users as well
+6. Add more linters to the CI
+7. Use poetry for requirements
