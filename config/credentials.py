@@ -9,7 +9,7 @@ def parse_credentials(config_file_path: str = "config.yml") -> Dict[str, Dict[st
     config_path = Path(config_file_path)
 
     if config_path.is_file():
-        with open('config.yml', 'r') as f:
+        with open(config_path, 'r') as f:
             config_dict = yaml.load(f, Loader=yaml.FullLoader)
     else:
         config_dict = yaml.safe_load(os.environ.get("CCI_CREDENTIALS"))
