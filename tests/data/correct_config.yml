@@ -1,0 +1,11 @@
+bot1:
+  api_token: "123abc"
+  chat_id: "123"
+bot2:
+  api_token: "456def"
+  chat_id: "456"
+aws:
+  key_id: "a1k"
+  secret_key: "b2k"
+ethscan:
+  api_key: "3rc"
