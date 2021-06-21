@@ -1,5 +1,5 @@
 from abc import abstractmethod, ABC
-from typing import List, Dict
+from typing import List
 
 
 class DataReader(ABC):
@@ -10,7 +10,7 @@ class DataReader(ABC):
 
 class DataDisplayer(ABC):
     @abstractmethod
-    def generate(self) -> str:
+    def generate(self, data) -> str:
        """
        Generates formatted text to be ready to send via send method
        """
@@ -26,7 +26,7 @@ class DataProcessor(ABC):
 
 class DataSender(ABC):
     @abstractmethod
-    def send_message(self) -> None:
+    def send_message(self, msg) -> None:
         ...
 
 
@@ -39,8 +39,8 @@ class BaseBot:
     def run(self):
         data = self.inputs.get_data()
         raw_outputs = {}
-        for function in functions:
-            raw_outputs[function.NAME] = displayer.generate(function.process(data))
-        for output in outputs:
+        for function in BaseBot.functions:
+            raw_outputs[function.NAME] = BaseBot.displayer.generate(function.process(data))
+        for output in BaseBot.outputs:
             for function_name in raw_outputs:
                 output.send_message(raw_outputs[function_name])
