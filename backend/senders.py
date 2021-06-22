@@ -14,4 +14,3 @@ class TelegramSender(DataSender):
             requests.get(sent_msg)
         else:
             raise RuntimeError("Missing Telegram token or chat id")
-        
