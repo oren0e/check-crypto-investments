@@ -1,4 +1,4 @@
-FOLDERS:= backend tests
+folders = backend tests
 
 test:
 	pytest -s -vvv -m "not integration" tests
@@ -7,13 +7,13 @@ test_all:
 	pytest -s -vvv tests
 
 check_format:
-	black --check FOLDERS
+	black --check $(folders)
 	isort **/*.py --check-only
 
 do_format:
-	black FOLDERS
+	black $(folders)
 	isort **/*.py
 
 lint:
-	pylint FOLDERS
-	mypy FOLDERS
+	pylint $(folders)
+	mypy $(folders)
