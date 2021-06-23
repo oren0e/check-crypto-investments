@@ -1,13 +1,13 @@
 import os
-import pytest
-
 from typing import Dict
 
-from backend.data_tools import CoinSearch, PriceHandler, DataReader, DataDisplayer
+import pytest
 
+from backend.data_tools import (CoinSearch, DataDisplayer, DataReader,
+                                PriceHandler)
 
 try:
-    from .temp_env_vars import TEMP_ENV_VARS, ENV_VARS_TO_SUSPEND
+    from .temp_env_vars import ENV_VARS_TO_SUSPEND, TEMP_ENV_VARS
 except ImportError:
     TEMP_ENV_VARS = {}
     ENV_VARS_TO_SUSPEND = []
@@ -49,14 +49,14 @@ def price_handler() -> PriceHandler:
 
 @pytest.fixture
 def initial_investments() -> Dict[str, float]:
-    return {'coin_A': 10, 'coin_B': 20}
+    return {"coin_A": 10, "coin_B": 20}
 
 
 @pytest.fixture
 def mock_new_prices() -> Dict[str, float]:
-    return {'coin_A': 50, 'coin_B': 200}
+    return {"coin_A": 50, "coin_B": 200}
 
 
 @pytest.fixture
 def mock_returns() -> Dict[str, float]:
-    return {'coin_A': 400.0, 'coin_B': 900.0}
+    return {"coin_A": 400.0, "coin_B": 900.0}
