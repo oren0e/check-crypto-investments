@@ -31,16 +31,17 @@ class DataSender(ABC):
 
 
 class BaseBot:
-    functions: List[DataProcessor]
-    inputs: DataReader
-    displayer: DataDisplayer
-    outputs: List[DataSender]
+    def __init__(self, functions: List[DataProcessor], inputs: DataReader, displayer: DataDisplayer, outputs: List[DataSender]) -> None:
+        self.functions = functions
+        self.inputs = inputs
+        self.displayer = displayer
+        self.outputs = outputs
 
     def run(self):
         data = self.inputs.get_data()
         raw_outputs = {}
-        for function in BaseBot.functions:
-            raw_outputs[function.NAME] = BaseBot.displayer.generate(function.process(data))
-        for output in BaseBot.outputs:
+        for function in self.functions:
+            raw_outputs[function.NAME] = self.displayer.generate(function.process(data))
+        for output in self.outputs:
             for function_name in raw_outputs:
                 output.send_message(raw_outputs[function_name])
