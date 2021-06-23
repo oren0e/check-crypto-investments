@@ -144,3 +144,6 @@ trying/**
 
 # investments
 lists/initial_investments
+
+# credentials
+config.yml
