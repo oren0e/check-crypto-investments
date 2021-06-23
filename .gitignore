@@ -147,3 +147,6 @@ lists/initial_investments
 
 # credentials
 config.yml
+
+# vim files
+*.swp
