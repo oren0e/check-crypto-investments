@@ -2,7 +2,7 @@
 line-length = 120
 
 [tool.pylint.messages_control]
-disable = "R,attribute-defined-outside-init,bad-option-value,invalid-name,locally-disabled,missing-docstring,ungrouped-imports,wrong-import-order,wrong-import-position,broad-except,len-as-condition,bad-continuation,too-many-lines,unsubscriptable-object,inherit-non-class"
+disable = "R,attribute-defined-outside-init,bad-option-value,invalid-name,locally-disabled,missing-docstring,ungrouped-imports,wrong-import-order,wrong-import-position,broad-except,len-as-condition,bad-continuation,too-many-lines,unsubscriptable-object,inherit-non-class,logging-fstring-interpolation"
 
 [tool.pylint.reports]
 reports = "no"
