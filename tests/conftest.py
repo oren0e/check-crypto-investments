@@ -3,8 +3,7 @@ from typing import Dict
 
 import pytest
 
-from backend.data_tools import (CoinSearch, DataDisplayer, DataReader,
-                                PriceHandler)
+from backend.data_tools import CoinSearch, DataDisplayer, DataReader, PriceHandler
 
 try:
     from .temp_env_vars import ENV_VARS_TO_SUSPEND, TEMP_ENV_VARS
