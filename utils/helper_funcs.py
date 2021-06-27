@@ -1,8 +1,6 @@
 from functools import wraps
-
-from typing import Callable
-
 from threading import Semaphore, Timer
+from typing import Callable
 
 
 def ratelimit(limit: int, every: int) -> Callable:

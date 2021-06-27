@@ -1,4 +1,5 @@
 import os
+
 import boto3
 
 S3_BUCKET = 'check-crypto-inv'
