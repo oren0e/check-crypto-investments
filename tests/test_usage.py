@@ -37,7 +37,7 @@ def test_default_get_initial_investments_from_source(data_reader) -> None:
 @mock.patch("cci.DataReader.get_gas_estimate")
 @mock.patch("cci.DataDisplayer.display_eth_gas")
 @mock.patch("cci.telegram_send")
-def test_telegram_send(telegram_send_mock, mock_gas, mock_gas_api, data_reader) -> None:
+def test_telegram_send(telegram_send_mock, mock_gas, mock_gas_api) -> None:
     bot_pool = BotPool()
     bot_pool.add_bot(
         Bot(
