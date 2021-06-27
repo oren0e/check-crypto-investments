@@ -99,7 +99,7 @@ class DataReader:
         raise ValueError("Unsupported data source")
 
     def get_gas_estimate(self) -> str:
-        return self.eth.get_gas_oracle()["ProposeGasPrice"] # pylint: disable=no-member
+        return self.eth.get_gas_oracle()["ProposeGasPrice"]  # pylint: disable=no-member
 
 
 class DataDisplayer:
