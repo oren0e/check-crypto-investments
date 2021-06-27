@@ -16,4 +16,4 @@ do_format:
 
 lint:
 	pylint $(folders)
-	mypy $(folders)
+	mypy --install-types --non-interactive $(folders)
