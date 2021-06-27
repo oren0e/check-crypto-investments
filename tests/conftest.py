@@ -1,5 +1,5 @@
 import os
-from typing import Dict
+from typing import Dict, Generator
 
 import pytest
 
@@ -13,7 +13,7 @@ except ImportError:
 
 
 @pytest.fixture
-def fake_credentials() -> None:
+def fake_credentials() -> Generator:
     # Execute before the first test
     old_environ = dict(os.environ)
     os.environ.update(TEMP_ENV_VARS)

@@ -62,7 +62,7 @@ class PriceHandler:
     def calculate_returns(self, initial_investments: Dict[str, float]) -> Dict[str, float]:
         result_dict: Dict[str, float] = {}
         for key, value in initial_investments.items():
-            result_dict[key] = round(((self.prices[key] - value) / value) * 100, 1)
+            result_dict[key] = round(((self.prices[key] - value) / value) * 100, 1) # type: ignore
         logger.info(f"Got dictionary of returns: {result_dict}")
         return result_dict
 
