@@ -1,6 +1,5 @@
 from typing import List
 
-
 TEMP_ENV_VARS = {
     "TELEGRAM_API_TOKEN": "123abc",
     "TELEGRAM_CGROUP_TOKEN": "456def",
