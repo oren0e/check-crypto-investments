@@ -35,4 +35,4 @@ class GasReader(DataReader):
     def get_data(self) -> str:
         credentials = parse_credentials()
         eth = Etherscan(credentials["ethscan"]["api_key"])
-        return eth.get_gas_oracle()["ProposeGasPrice"]
+        return eth.get_gas_oracle()["ProposeGasPrice"] # pylint: disable=no-member
