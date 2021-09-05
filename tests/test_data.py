@@ -13,4 +13,4 @@ def test_correct_initial_investment_parsing() -> None:
     assert initial_dict["asset_a"] == 100.0
     assert initial_dict["asset_c"] == 300.0
     with pytest.raises(KeyError):
-        initial_dict["asset_b"]
+        cant_exist = initial_dict["asset_b"]
