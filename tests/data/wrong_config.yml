@@ -1,8 +1,0 @@
-bot1:
-  api_token: "123abc"
-  chat_id: "123"
-bot2:
-  api_token: "456def"
-  chat_id: "456"
-ethscan:
-  api_key: "3rc"
