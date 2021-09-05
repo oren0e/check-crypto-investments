@@ -8,9 +8,16 @@ class TelegramSender(DataSender):
         self.api_token = api_token
         self.chat_id = chat_id
 
-    def send_message(self, msg)  -> None:
+    def send_message(self, msg) -> None:
         if self.api_token and self.chat_id:
-            sent_msg = 'https://api.telegram.org/bot' + self.api_token + '/sendMessage?chat_id=' + self.chat_id + '&parse_mode=Markdown&text=' + msg
+            sent_msg = (
+                "https://api.telegram.org/bot"
+                + self.api_token
+                + "/sendMessage?chat_id="
+                + self.chat_id
+                + "&parse_mode=Markdown&text="
+                + msg
+            )
             requests.get(sent_msg)
         else:
             raise RuntimeError("Missing Telegram token or chat id")

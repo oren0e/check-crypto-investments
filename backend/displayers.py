@@ -1,11 +1,12 @@
-from backend.interfaces import DataDisplayer
 from typing import Dict
+
+from backend.interfaces import DataDisplayer
 
 
 class GasDisplayer(DataDisplayer):
     @staticmethod
     def generate(data: str) -> str:
-        return f"*Gas:* {data} Gwei\n"
+        return f"*Gas:* {data} Gwei"
 
 
 class ReturnsDisplayer(DataDisplayer):
