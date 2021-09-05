@@ -16,4 +16,4 @@ def parse_credentials(config_file_path: Optional[str] = None) -> Dict[str, Dict[
         else:
             raise ValueError(f"File {config_path} does not exist!")
     else:
-        return yaml.safe_load(os.environ.get("CCI_CREDENTIALS"))
+        return yaml.safe_load(os.environ.get("CCI_CREDENTIALS")) # type: ignore
