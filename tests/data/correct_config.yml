@@ -4,8 +4,5 @@ bot1:
 bot2:
   api_token: "456def"
   chat_id: "456"
-aws:
-  key_id: "a1k"
-  secret_key: "b2k"
 ethscan:
   api_key: "3rc"
