@@ -18,13 +18,9 @@ with an alerts via Telegram. Further alert senders can be implemented as well.
     should contain the id of the coin you are interested to monitor followed by a single space
     followed by the initial price you bought this coin for (price per 1 coin).
 
-        - If you're not sure about the `id` of your coin you should check at coingecko's API - i.e.:
-        ```
-
-    curl -X 'GET' 'https://api.coingecko.com/api/v3/coins/list' -H 'accept: application/json'
-
+    - If you're not sure about the `id` of your coin you should check at coingecko's API - i.e.:
     ```
-
+    curl -X 'GET' 'https://api.coingecko.com/api/v3/coins/list' -H 'accept: application/json'
     ```
 
 5.  For using telegram:
