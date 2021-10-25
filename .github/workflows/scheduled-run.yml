@@ -26,5 +26,4 @@ jobs:
         INITIAL_INVESTMENTS: ${{ secrets.INITIAL_INVESTMENTS }}
       run: |
         python cci.py cci_bot
-        python cci.py cgroup_bot
 
